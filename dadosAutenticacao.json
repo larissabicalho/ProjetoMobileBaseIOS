@@ -1,0 +1,6 @@
+{
+  "user" : "admin",
+  "senha": "password",
+  "userErrado" : "teste",
+  "senhaErrada" : "abc123"
+}
