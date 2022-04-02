@@ -3,7 +3,6 @@ package JavaAppiumCucumberExtentReportsTemplate.Bases;
 
 import com.google.common.collect.ImmutableMap;
 import io.appium.java_client.*;
-import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.touch.LongPressOptions;
 import io.appium.java_client.touch.TapOptions;
 import io.appium.java_client.touch.WaitOptions;
@@ -320,9 +319,6 @@ public class PageBase {
         waitForElement(locator).sendKeys(text);
     }
 
-    protected  void clicarEmEnter() {
-        ((AndroidDriver)driver).getKeyboard().pressKey(Keys.ENTER);
-    }
 
     protected String getText(By locator){
         String text = waitForElement(locator).getText();

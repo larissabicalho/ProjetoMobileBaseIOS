@@ -26,31 +26,18 @@ public class GlobalParameters {
 
     public static String AppiumIPAddress;
     public static int AppiumPort;
-    public static boolean isAndroid;
     public static boolean isDeviceFarm;
     public static boolean isLocal;
     public static boolean isInstalado;
     public static boolean isMacOS;
     public static boolean isEmulador;
+    public static boolean isIosSimulator;
+    public static String AppiumServer;
 
     public static String AccessKeyBrowserStack;
     public static String UsernameBrowserStack;
     public static String BuildNumberBrowserStack;
-    public static String AppAndroidUploadBrowserStack;
     public static String AppIOSUploadBrowserStack;
-
-    public static String AndroidDeviceName;
-    public static String AndroidUDID;
-    public static String AndroidPlatformName;
-    public static String AndroidPlatformVersion;
-    public static String AndroidAppPackage;
-    public static String AndroidAppActivity;
-    public static String AppiumServer;
-    public static String AndroidAppPath;
-    public static String AndroidBrowserName;
-    public static String AndroidNoReset;
-    public static String AndroidFullReset;
-    public static String AndroidOrientation;
 
     public static String IOSPlatformName;
     public static String IOSPlatformVersion;
@@ -68,11 +55,6 @@ public class GlobalParameters {
     public static String IOSOSVersionBrowserStack;
     public static String IOSProjectBrowserStack;
 
-
-
-    public static String AndroidDeviceBrowserStack;
-    public static String AndroidOSVersionBrowserStack;
-    public static String AndroidProjectBrowserStack;
 
 
 
@@ -110,17 +92,16 @@ public class GlobalParameters {
         AppiumPort = Integer.parseInt(properties.getProperty("AppiumPort"));
 
         isEmulador = Boolean.parseBoolean(properties.getProperty("isEmulador"));
-        isAndroid = Boolean.parseBoolean(properties.getProperty("isAndroid"));
         isDeviceFarm = Boolean.parseBoolean(properties.getProperty("isDeviceFarm"));
         isLocal = Boolean.parseBoolean(properties.getProperty("isLocal"));
         isInstalado = Boolean.parseBoolean(properties.getProperty("isInstalado"));
         isMacOS = Boolean.parseBoolean(properties.getProperty("isMacOS"));
+        isIosSimulator = Boolean.parseBoolean(properties.getProperty("isIosSimulator"));
 
         //BrowserStack Region
         AccessKeyBrowserStack = properties.getProperty("AccessKeyBrowserStack");
         UsernameBrowserStack = properties.getProperty("UsernameBrowserStack");
         BuildNumberBrowserStack = properties.getProperty("BuildNumberBrowserStack");
-        AppAndroidUploadBrowserStack = properties.getProperty("AppAndroidUploadBrowserStack");
         AppIOSUploadBrowserStack = properties.getProperty("AppIOSUploadBrowserStack");
 
 
@@ -128,24 +109,6 @@ public class GlobalParameters {
         IOSOSVersionBrowserStack = properties.getProperty("IOSOSVersionBrowserStack");
         IOSProjectBrowserStack = properties.getProperty("IOSProjectBrowserStack");
 
-
-
-        AndroidDeviceBrowserStack = properties.getProperty("AndroidDeviceBrowserStack");
-        AndroidOSVersionBrowserStack = properties.getProperty("AndroidOSVersionBrowserStack");
-        AndroidProjectBrowserStack = properties.getProperty("AndroidProjectBrowserStack");
-
-        //Android Region
-        AndroidDeviceName  = properties.getProperty("AndroidDeviceName");
-        AndroidUDID= properties.getProperty("AndroidUDID");
-        AndroidPlatformName= properties.getProperty("AndroidPlatformName");
-        AndroidPlatformVersion= properties.getProperty("AndroidPlatformVersion");
-        AndroidAppPackage= properties.getProperty("AndroidAppPackage");
-        AndroidAppActivity= properties.getProperty("AndroidAppActivity");
-        AndroidAppPath = Utils.returnPathProject()+"\\src\\test\\resources\\app\\android\\"+properties.getProperty("AndroidApp");
-        AndroidBrowserName=properties.getProperty("AndroidBrowserName");
-        AndroidNoReset=properties.getProperty("AndroidNoReset");
-        AndroidFullReset=properties.getProperty("AndroidFullReset");
-        AndroidOrientation=properties.getProperty("AndroidOrientation");
 
         //iOS Region
         IOSPlatformName  = properties.getProperty("IOSPlatformName");
