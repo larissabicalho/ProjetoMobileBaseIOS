@@ -1,12 +1,9 @@
 Feature: Home App
-
   @app
   Scenario Outline: Acessa Home
-    When clicar no menu lateral
     And clicar no menu Input
     And escrever Texto <texto>
     Then verificar se o texto esta escrito <texto>
-
     Examples:
       |texto|
       |Texto 2|
@@ -15,154 +12,75 @@ Feature: Home App
       |Texto 5|
       |Texto 6|
       |Texto 7|
+  @app
+  Scenario: Acessa Home
+    And clicar no menu Input
+    And clicar no segundo Info
+    And clicar no moreInfo
+    Then verificar se o information
 
   @app
   Scenario: Acessa Home
-    When clicar no menu lateral
     And clicar no menu Input
-    And clicar no menu Checkbox
-    And clicar no checkbox
-    Then verificar se o checkbox foi clicado
-
-
-  @app
-  Scenario Outline: Acessa Home
-    When clicar no menu lateral
-    And clicar no menu Input
-    And clicar no menu RadioButton
-    And clicar no radio <site>
-    Then verificar se o radio foi clicado <site>
-
-    Examples:
-      |site|
-      |Amazon|
-      |Web|
-      |Services|
-
+    And clicar no segundo Info
+    And clicar no moreInfo
+    And clicar no information
+    Then verificar se o add foi clicado
 
   @app
   Scenario: Acessa Home
-    When clicar no menu lateral
     And clicar no menu Input
-    And clicar no menu ToggleButton
+    And clicar no terceiro Info
+    And procurar no DataPicker
+    And trocar o Picker
+    And trocar o mes
+    And trocar o ano
+    And trocar o hidden
+    Then verificar a data
+
+  @app
+  Scenario: Acessa Home
+    And clicar no menu Input
+    And clicar no quarta Info
+    Then verificar Label 1
+
+  @app
+  Scenario: Acessa Home
+    And clicar no menu Input
+    And clicar no quarta Info
+    Then verificar Label 2
+
+  @app
+  Scenario: Acessa Home
+    And clicar no menu Input
+    And clicar no quarta Info
+    Then verificar quantidade de label
+
+  @app
+  Scenario: Acessa Home
+    And clicar no menu Input
+    And clicar no sexta Info
     And clicar no toggle
     Then verificar se toggle foi clicado
 
-
   @app
   Scenario Outline: Acessa Home
-    When clicar no menu lateral
     And clicar no menu Input
-    And clicar no menu Spinner
+    And clicar no nona Info
     And clicar no spinner <spinner>
-    Then verificar se spinner foi selecionado <spinner>
+
     Examples:
       |spinner|
-      |option 1|
-      |option 2|
-      |option 3|
-      |option 4|
-      |option 5|
-      |option 6|
+      |Selection 1|
+      |Selection 2|
+      |Selection 3|
+      |Selection 4|
+      |Selection 5|
 
   @app
-  Scenario: Acessa Home
-    When clicar no menu lateral
+ Scenario: Acessa Home
     And clicar no menu Input
-    And clicar no menu PullToRefresh
-    And faz o pull refresh na tela
-    Then verificar hora atual aparecendo
+    And clicar no decima Info
+    And swippe leve no objeto
+    And verificar a mudanca
 
-
-  @app
-  Scenario Outline: Acessa Home
-    When clicar no menu lateral
-    And clicar no menu Input
-    And clicar no menu TimePickerScreen
-    And adicionar hora <hora> e minuto <minutos>
-    And colocar o turno <turno>
-    Then verificar se hora <hora> e minutos <minutos> e qual turno <turno>
-
-    Examples:
-      |hora|minutos|turno|
-      |6   |45     |AM   |
-      |6   |30     |PM   |
-      |12  |45     |AM   |
-      |12  |30     |PM   |
-      |7   |45     |PM   |
-
-
-  @app
-  Scenario Outline: Acessa Home
-    When clicar no menu lateral
-    And clicar no menu Input
-    And clicar no menu DatePickerScreen
-    And mudar o ano
-    And clicar mudar o mes para anterior
-    And mudar o dia <dia>
-    Then verificar o ano
-    Examples:
-      |dia|
-      |22 |
-
-  @app
-  Scenario: Acessa Home
-    When clicar no menu lateral
-    And clicar no menu Input
-    And clicar no menu Submit
-    Then clicar no submit Toast e validar Mensagem
-
-  @app
-  Scenario Outline: Acessa Home
-    When clicar no menu lateral
-    And clicar no menu Input
-    And clicar no menu Gestures
-    And escolher um método de Gestures LongPress
-    Then verifica a ultima acao <acao>
-    Examples:
-    | acao|
-    |Long Press|
-
-  @app
-  Scenario Outline: Acessa Home
-    When clicar no menu lateral
-    And clicar no menu Input
-    And clicar no menu Gestures
-    And escolher um método de Gestures Tap
-    Then verifica a ultima acao <acao>
-    Examples:
-      |acao|
-      |Single tap confirmed|
-
-  @app
-  Scenario Outline: Acessa Home
-    When clicar no menu lateral
-    And clicar no menu Input
-    And clicar no menu Gestures
-    And escolher um método de Gestures Double Tap
-    Then verifica a ultima acao <acao>
-    Examples:
-      |acao|
-      |Event within double tap|
-
-  @app
-  Scenario Outline: Acessa Home
-    When clicar no menu lateral
-    And clicar no menu Input
-    And clicar no menu Gestures
-    And escolher um método de Gestures Scroll
-    Then verifica a ultima acao <acao>
-    Examples:
-      |acao|
-      |Scroll|
-
-  @app
-  Scenario Outline: Acessa Home
-    When clicar no menu lateral
-    And clicar no menu Input
-    And clicar no menu Gestures
-    And escolher um método de Gestures Fling
-    Then verifica a ultima acao <acao>
-    Examples:
-       |acao|
-       |Fling |

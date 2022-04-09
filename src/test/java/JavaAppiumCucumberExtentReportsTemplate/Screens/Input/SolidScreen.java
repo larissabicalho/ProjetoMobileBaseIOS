@@ -1,29 +1,22 @@
 package JavaAppiumCucumberExtentReportsTemplate.Screens.Input;
 
 import JavaAppiumCucumberExtentReportsTemplate.Bases.PageBase;
+import io.appium.java_client.MobileElement;
 import org.openqa.selenium.By;
 
-public class AddScreen extends PageBase {
-    By moreInfo = By.xpath("//XCUIElementTypeButton[@name='add']");
-    By informationButton = By.xpath("//XCUIElementTypeButton[@name='More Info']");
-    By validarCheckBox = By.xpath("//android.widget.TextView[@content-desc='Checkbox Display']");
+public class SolidScreen extends PageBase {
+    By solidInfo = By.xpath("//XCUIElementTypeImage[@type='XCUIElementTypeImage']");
 
-
-    public void clicarNoAdd(){
-       click(moreInfo);
+    public void swipePequeno(){
+        swipeElementWithDirection2(solidInfo, "down");
     }
 
-    public void clicarNoInformation(){
-        click(informationButton);
+    public boolean verificarChange() {
+        MobileElement element = waitForElement(solidInfo);
+        if(element.getCoordinates().onPage().getY()!=398){
+            return true;
+        } else {
+            return false;
+        }
     }
-
-    public String verificarTextoInfo(){
-        return getText(informationButton);
-    }
-
-    public String verificarTextoAdd(){
-        return getText(moreInfo);
-    }
-
-
 }

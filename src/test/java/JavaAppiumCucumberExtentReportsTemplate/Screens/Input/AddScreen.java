@@ -3,18 +3,26 @@ package JavaAppiumCucumberExtentReportsTemplate.Screens.Input;
 import JavaAppiumCucumberExtentReportsTemplate.Bases.PageBase;
 import org.openqa.selenium.By;
 
-public class CheckboxScreen extends PageBase {
-    By checkBoxClick = By.xpath("//android.widget.TextView[@text='Checkbox']");
-    By checkBoxButton = By.id("com.amazonaws.devicefarm.android.referenceapp:id/input_checkbox");
+public class AddScreen extends PageBase {
+    By moreInfo = By.xpath("//XCUIElementTypeButton[@name='add']");
+    By informationButton = By.xpath("//XCUIElementTypeButton[@name='More Info']");
     By validarCheckBox = By.xpath("//android.widget.TextView[@content-desc='Checkbox Display']");
 
 
-    public void clicarCheckbox(){
-        click(checkBoxButton);
+    public void clicarNoAdd(){
+       click(moreInfo);
     }
 
-    public String verificarTextoCheckbox(){
-        return getText(validarCheckBox);
+    public void clicarNoInformation(){
+        click(informationButton);
+    }
+
+    public String verificarTextoInfo(){
+        return getText(informationButton);
+    }
+
+    public String verificarTextoAdd(){
+        return getText(moreInfo);
     }
 
 

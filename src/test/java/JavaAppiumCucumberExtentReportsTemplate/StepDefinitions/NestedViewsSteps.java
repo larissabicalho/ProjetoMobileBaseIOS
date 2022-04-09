@@ -14,12 +14,6 @@ public class NestedViewsSteps {
 
     NestedViewsScreen nestedViewsScreen ;
 
-    @And("clicar no Up Navigation")
-    public void clicarNoUp() {
-        nestedViewsScreen = new NestedViewsScreen();
-        nestedViewsScreen.clicarNoUp();
-        getScenario().embed(((TakesScreenshot) DriverFactory.driver).getScreenshotAs(OutputType.BYTES), "image/png");
-    }
 
     @And("clicar no Back Navigation")
     public void clicarNoBack() {
@@ -28,13 +22,12 @@ public class NestedViewsSteps {
         getScenario().embed(((TakesScreenshot) DriverFactory.driver).getScreenshotAs(OutputType.BYTES), "image/png");
     }
 
-    @And("clicar no Next Level")
-    public void clicarNoNextLevel(){
+    @And("clicar no More")
+    public void clicarNoMore() {
         nestedViewsScreen = new NestedViewsScreen();
-        nestedViewsScreen.clicarNoNextLevel();
+        nestedViewsScreen.clicarNoMore();
         getScenario().embed(((TakesScreenshot) DriverFactory.driver).getScreenshotAs(OutputType.BYTES), "image/png");
     }
-
     @And("clicar no Next Level Back (.*)")
     public void clicarNoNextLevelBack(String valor){
         nestedViewsScreen = new NestedViewsScreen();
@@ -42,31 +35,18 @@ public class NestedViewsSteps {
         getScenario().embed(((TakesScreenshot) DriverFactory.driver).getScreenshotAs(OutputType.BYTES), "image/png");
     }
 
-    @Then("verificar Final Level")
-    public void verificarTexto(){
+    @Then("verificar Final Level (.*)")
+    public void verificarTexto(String texto){
         nestedViewsScreen = new NestedViewsScreen();
-        Assert.assertEquals(nestedViewsScreen.verificarFinalLevel(),"Final Level");
+        Assert.assertEquals(nestedViewsScreen.verificarFinalLevel(texto), texto);
         getScenario().embed(((TakesScreenshot) DriverFactory.driver).getScreenshotAs(OutputType.BYTES), "image/png");
     }
 
-    @Then("verificar quantidade de level (.*)")
-    public void verificarValor(String view){
-        nestedViewsScreen = new NestedViewsScreen();
-        Assert.assertEquals(nestedViewsScreen.verificarLevel(), view);
-        getScenario().embed(((TakesScreenshot) DriverFactory.driver).getScreenshotAs(OutputType.BYTES), "image/png");
-    }
 
     @Then("verificar se voltou para inicial")
     public void verificarValor(){
         nestedViewsScreen = new NestedViewsScreen();
-        Assert.assertTrue(nestedViewsScreen.verificarSeVoltouPrincipal());
-        getScenario().embed(((TakesScreenshot) DriverFactory.driver).getScreenshotAs(OutputType.BYTES), "image/png");
-    }
-
-    @And("clicar no Back Navigation Menu Principal")
-    public void clicarNoBackPrincipal(){
-        nestedViewsScreen = new NestedViewsScreen();
-        nestedViewsScreen.clicarNoBackPrincipal();
+         Assert.assertTrue(nestedViewsScreen.verificarSeVoltouPrincipal());
         getScenario().embed(((TakesScreenshot) DriverFactory.driver).getScreenshotAs(OutputType.BYTES), "image/png");
     }
 

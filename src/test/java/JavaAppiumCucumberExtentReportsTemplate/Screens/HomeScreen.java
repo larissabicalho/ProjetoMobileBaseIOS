@@ -5,9 +5,9 @@ import org.openqa.selenium.By;
 
 public class HomeScreen extends PageBase {
 
-    By menuButton = By.xpath("//android.widget.ImageButton[@content-desc=\"ReferenceApp\"]");
+    By menuButton = By.xpath("//XCUIElementTypeButton[@name='More']");
 
-    By textoHome = By.xpath("//android.widget.TextView[@content-desc=\"Homepage Headline\"]");
+    By textoHome = By.xpath("//XCUIElementTypeStaticText[@name='AWS Device Farm Sample app']");
 
     public void clicarMenu(){
         click(menuButton);

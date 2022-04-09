@@ -5,19 +5,15 @@ import org.openqa.selenium.By;
 
 public class VideoPlayerScreen extends PageBase {
 
-    By menuVideo = By.xpath("//android.widget.TextView[@text='Video Player']");
-    By videoAparecendo = By.id("com.amazonaws.devicefarm.android.referenceapp:id/native_video_player");
+    By menuVideo = By.xpath("//XCUIElementTypeStaticText[@name='Video Player']");
+    By videoAparecendo = By.xpath("//XCUIElementTypeOther[@name='Audio']");
 
     public void clicarMenuVideo(){
-        while(!returnElementDisplayedElement(menuVideo)){
-            scrollUsingTouchActionsOnlyY(2);
-        }
         click(menuVideo);
-
     }
 
     public boolean verificarSeOElementoExiste(){
-        return returnElementDisplayed(videoAparecendo);
+        return returnElementExists(videoAparecendo);
     }
 
 

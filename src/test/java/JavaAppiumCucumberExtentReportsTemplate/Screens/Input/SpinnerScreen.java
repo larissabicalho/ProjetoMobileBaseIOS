@@ -4,28 +4,25 @@ import JavaAppiumCucumberExtentReportsTemplate.Bases.PageBase;
 import org.openqa.selenium.By;
 
 public class SpinnerScreen extends PageBase {
-    By spinnerClick = By.xpath("//android.widget.Spinner[@content-desc='Spinner Control']");
-    String spinnerOption = "//android.widget.TextView[@text='###']";
-    By verificarOption = By.xpath("//android.widget.TextView[@content-desc='Spinner Display']");
+    By selectionPicker = By.xpath("//*[@type = 'XCUIElementTypePickerWheel']");
 
-    public void elementoSpinner(){
-        while(!returnElementDisplayedElement(spinnerClick)){
-            scrollUsingTouchActionsOnlyY(2);
-        }
-        click(spinnerClick);
-
-
-    }
 
     public void clicarNoSpinner(String option)
     {
-        spinnerOption = spinnerOption.replace("###",option);
-        click(By.xpath(spinnerOption));
+        String selection;
+        selection = getText(selectionPicker);
+        if(option.contains(selection))
+        {}
+        else {
+            do {
+                littleSwipeByElement(selectionPicker, "TOP");
+                selection = getText(selectionPicker);
+            } while (!option.contains(selection));
+        }
     }
 
     public String verificarSpinner(){
-        waitForElement(verificarOption);
-        return getText(verificarOption);
+        return getText(selectionPicker);
     }
 
 

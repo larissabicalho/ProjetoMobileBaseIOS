@@ -1,6 +1,5 @@
 package JavaAppiumCucumberExtentReportsTemplate.StepDefinitions.Native;
 
-import JavaAppiumCucumberExtentReportsTemplate.Screens.Native.ContentScrollingScreen;
 import JavaAppiumCucumberExtentReportsTemplate.Screens.Native.VideoPlayerScreen;
 import JavaAppiumCucumberExtentReportsTemplate.Utils.DriverFactory;
 import io.cucumber.java.en.And;

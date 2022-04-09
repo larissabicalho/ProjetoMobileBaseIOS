@@ -34,7 +34,7 @@ public class HomeSteps {
     @Then ("valido frase Home")
     public void xpto2(){
         homeScreen = new HomeScreen();
-        Assert.assertEquals(homeScreen.validarTextoHome(), "AWS Device Farm Sample App for Android");
+        Assert.assertEquals(homeScreen.validarTextoHome(), "AWS Device Farm Sample app");
         getScenario().embed(((TakesScreenshot) DriverFactory.driver).getScreenshotAs(OutputType.BYTES), "image/png");
     }
 

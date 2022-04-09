@@ -1,6 +1,5 @@
 package JavaAppiumCucumberExtentReportsTemplate.StepDefinitions.Native;
 
-import JavaAppiumCucumberExtentReportsTemplate.Screens.Input.CheckboxScreen;
 import JavaAppiumCucumberExtentReportsTemplate.Screens.Native.ImageCollectionScreen;
 import JavaAppiumCucumberExtentReportsTemplate.Utils.DriverFactory;
 import io.cucumber.java.en.And;
@@ -18,17 +17,15 @@ public class ImageCollectionSteps {
     @Then("verificar se existe galeria")
     public void verificarSeExisteGaleria(){
         imageCollectionScreen = new ImageCollectionScreen();
-        Assert.assertTrue(imageCollectionScreen.verificarSeExisteGaleria());
+        Assert.assertEquals(imageCollectionScreen.verificarSeExisteGaleria(),8);
         getScenario().embed(((TakesScreenshot) DriverFactory.driver).getScreenshotAs(OutputType.BYTES), "image/png");
     }
 
-    @And("verificar o resto das imagens")
-    public void verificarORestoDaImagem(){
+    @And("clicar em ImageGallery")
+    public void clicarEmImageGallery(){
         imageCollectionScreen = new ImageCollectionScreen();
-        Assert.assertTrue(imageCollectionScreen.scroolElementosGaleria());
+        imageCollectionScreen.clicarImageGallery();
         getScenario().embed(((TakesScreenshot) DriverFactory.driver).getScreenshotAs(OutputType.BYTES), "image/png");
-
-
     }
 
 }

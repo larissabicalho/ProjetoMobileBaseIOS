@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="javaappiumcucumberextentreportstemplate-master" />
         <module name="ProjetoMobileJavaBase" />
+        <module name="ProjetoMobileBaseIOS" />
         <module name="JavaAppiumCucumberExtentReportsTemplate" />
         <module name="IOSAutomation" />
       </profile>

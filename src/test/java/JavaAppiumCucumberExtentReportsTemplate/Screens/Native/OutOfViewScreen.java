@@ -2,24 +2,24 @@ package JavaAppiumCucumberExtentReportsTemplate.Screens.Native;
 
 import JavaAppiumCucumberExtentReportsTemplate.Bases.PageBase;
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class ContentOutOfViewScreen extends PageBase {
-    By menuContent = By.xpath("//XCUIElementTypeStaticText[@name='Image Gallery']");
-    By hiddenText = By.id("com.amazonaws.devicefarm.android.referenceapp:id/hidden_text");
+public class OutOfViewScreen extends PageBase {
+    By menuContent = By.xpath("//XCUIElementTypeStaticText[@name='Out of View Component']");
+    By hiddenText = By.xpath("//*[@name='This is hidden text' and @visible = 'true']");
 
     public void clicarMenuContent(){
         click(menuContent);
     }
 
-    public void scroolAteHidden(){
-            topToBottonSwipe();
-            topToBottonSwipe();
+
+    public void scrollUntilElementIsShown(){
+        while(!returnElementDisplayedElement(hiddenText)){
+           topToBottonSwipe();
+        }
     }
 
     public String verificarSeOTextoAparecendo(){
-        scroolAteHidden();
-        waitForElementBeVisible(hiddenText);
+        scrollUntilElementIsShown();
         return getText(hiddenText);
     }
 

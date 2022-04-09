@@ -15,7 +15,7 @@ import java.util.Set;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
-
+import JavaAppiumCucumberExtentReportsTemplate.GlobalParameters;
 import static JavaAppiumCucumberExtentReportsTemplate.Utils.DriverFactory.driver;
 
 public class Utils {
@@ -74,6 +74,14 @@ public class Utils {
 
     public static String returnPathProject(){
         return System.getProperty("user.dir") + "\\";
+    }
+    public static String returnPathProjectMAC(){
+        if(GlobalParameters.isLocal){
+            return System.getProperty("user.dir") + "/";
+        }
+        else{
+            return "";
+        }
     }
 
     public static String getBase64Screenshot(WebDriver driver) throws IOException {

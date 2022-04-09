@@ -5,9 +5,9 @@ import org.openqa.selenium.By;
 
 public class CrashScreen extends PageBase {
 
-    By botaoCrash = By.id("com.amazonaws.devicefarm.android.referenceapp:id/crash_button");
+    By botaoCrash = By.xpath("//XCUIElementTypeButton[@name='ic warning white 48pt']");
 
     public boolean verificarNoCrash(){
-        return returnElementDisplayed(botaoCrash);
+        return returnElementDisplayedElement(botaoCrash);
     }
 }

@@ -1,45 +1,31 @@
 Feature: Acessar app
-
   @app
-  Scenario: Verificar Se Galeria Existe
-    When clicar no menu lateral
+  Scenario: Verificar ContentScrolling
     And clicar no menu Native
+    And clicar em ImageGallery
     And verificar se existe galeria
 
   @app
-  Scenario: Verificar Imagens Restantes
-    When clicar no menu lateral
+  Scenario: Verificar ContentScrolling
     And clicar no menu Native
-    And verificar o resto das imagens
+    And clicar no menu ContentScrolling
+    And verificar se esta na tela
 
   @app
-  Scenario Outline: Verificar ContentScrolling
-    When clicar no menu lateral
+  Scenario: Verificar ContentScrolling
     And clicar no menu Native
-    And clicar no menu ContentScrolling <value>
-    Then texto final aparece
-
-    Examples:
-      | value |
-      | 9|
+    And clicar em TableOfElements
+    And ir ate o Elemento 39
+    Then verificar Texto 39
 
   @app
-  Scenario: Verificar Imagens Restantes
-    When clicar no menu lateral
+  Scenario: Verificar ContentScrolling
     And clicar no menu Native
     And clicar no menu VideoPlayer
-    Then verificar se o video apareceu
+    And verificar se o video apareceu
 
   @app
-  Scenario: Verificar Imagens Restantes
-    When clicar no menu lateral
-    And clicar no menu Native
-    And clicar no menu Camera
-    Then verificar se o camera apareceu
-
-  @app
-  Scenario: Verificar Imagens Restantes
-    When clicar no menu lateral
+  Scenario: Verificar ContentScrolling
     And clicar no menu Native
     And clicar no menu ContentOutOfView
-    Then verificar se o texto escondido aparece
+    And verificar se o texto escondido aparece

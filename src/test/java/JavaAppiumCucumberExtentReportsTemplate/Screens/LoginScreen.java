@@ -5,12 +5,14 @@ import org.openqa.selenium.By;
 
 public class LoginScreen extends PageBase {
 
-    By usernameField = By.id("com.amazonaws.devicefarm.android.referenceapp:id/username_text_input");
-    By passwordField = By.id("com.amazonaws.devicefarm.android.referenceapp:id/password_text_input");
-    By loginButton = By.id("com.amazonaws.devicefarm.android.referenceapp:id/login_button");
-    By verificarLogin = By.id("com.amazonaws.devicefarm.android.referenceapp:id/login_alt_message_textView");
-    By clicarLogout = By.id("com.amazonaws.devicefarm.android.referenceapp:id/alt_button");
-    By clicarTryButton = By.id("com.amazonaws.devicefarm.android.referenceapp:id/alt_button");
+    By usernameField = By.xpath("//XCUIElementTypeTextField[@value='Username']");
+    By passwordField = By.xpath("//XCUIElementTypeSecureTextField[@value='Password']");
+    By loginButton = By.xpath("//XCUIElementTypeButton[@name='Login']");
+    By verificarLogin = By.xpath("//XCUIElementTypeStaticText[@name='Logged in as admin']");
+    By verificarLoginErrado = By.xpath("//XCUIElementTypeStaticText[@name=\"PERMISSION DENIED\"]");
+    By clicarLogout = By.xpath("//*[@type='XCUIElementTypeButton']");
+    By clicarTryButton = By.xpath("//*[@type='XCUIElementTypeButton']");
+    By loginPageMenu = By.xpath("//XCUIElementTypeStaticText[@name='Login']");
 
     //Actions
     public void preencherUsuario(String usuario) {
@@ -29,15 +31,20 @@ public class LoginScreen extends PageBase {
         return getText(verificarLogin);
     }
 
+    public String verificarMessageLoginErrado() {
+        return getText(verificarLoginErrado);
+    }
+
     public void clicarEmLogout() {
         click(clicarLogout);
     }
 
     public boolean verificarSeVoltouParaInicial() {
-        return returnElementDisplayed(usernameField);
+        return returnElementDisplayed(loginPageMenu);
     }
 
     public void clicarTryButton(){
+        waitForElement(clicarTryButton);
         click(clicarTryButton);
     }
 

@@ -5,24 +5,17 @@ import org.openqa.selenium.By;
 
 public class ToggleButtonScreen extends PageBase {
     By toggleClick = By.xpath("//android.widget.TextView[@text='Toggle Button']");
-    By toggleButton = By.id("com.amazonaws.devicefarm.android.referenceapp:id/input_switch");
-    By verificarSeToggleTaOn = By.xpath("//android.widget.FrameLayout[@content-desc='ON']");
+    By toggleButton = By.xpath("//*[@type='XCUIElementTypeSwitch']");
 
 
-    public void elementoToggle(){
-        while(!returnElementDisplayedElement(toggleClick)){
-            scrollUsingTouchActionsOnlyY(2);
-        }
-        click(toggleClick);
-    }
 
     public void clicarElementoToggle(){
         waitForElement(toggleButton);
         click(toggleButton);
     }
 
-    public Boolean verificarToggle(){
-        waitForElement(verificarSeToggleTaOn);
-        return returnElementDisplayed(verificarSeToggleTaOn);
+    public String verificarToggle(){
+        waitForElement(toggleButton);
+        return getText(toggleButton);
     }
 }

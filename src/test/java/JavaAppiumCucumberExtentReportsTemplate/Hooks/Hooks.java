@@ -2,6 +2,7 @@ package JavaAppiumCucumberExtentReportsTemplate.Hooks;
 
 import JavaAppiumCucumberExtentReportsTemplate.Utils.DriverFactory;
 import JavaAppiumCucumberExtentReportsTemplate.Utils.Utils;
+import JavaAppiumCucumberExtentReportsTemplate.GlobalParameters;
 import com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter;
 import io.cucumber.core.api.Scenario;
 import io.cucumber.java.After;
@@ -22,6 +23,7 @@ public class Hooks {
     @Before
     public void beforMethodSetUp(Scenario _scenario) throws Throwable {
         scenario = _scenario;
+        new GlobalParameters();
         cleanDirectoryReport();
         DriverFactory.inicializaDriver(isDeviceFarm);
     }

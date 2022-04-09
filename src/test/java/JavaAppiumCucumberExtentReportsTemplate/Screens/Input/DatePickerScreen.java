@@ -4,41 +4,36 @@ import JavaAppiumCucumberExtentReportsTemplate.Bases.PageBase;
 import org.openqa.selenium.By;
 
 public class DatePickerScreen extends PageBase {
-    By dateClick = By.xpath("//android.widget.TextView[@text='Date Picker']");
-    By procurarAData = By.id("android:id/date_picker_header_year");
-    By procurar1995 = By.xpath("//android.widget.TextView[@text='1995']");
-    By clicar1995 = By.xpath("//android.widget.TextView[@text='1995']");
-    By trocarOMes = By.id("android:id/next");
+    By clicarNoData = By.xpath("//XCUIElementTypeOther[@name=\"Date Picker\"]");
+    By trocarMesAno = By.xpath("//XCUIElementTypeButton[@name='Show year picker']");
+    By trocarOMes = By.xpath("//XCUIElementTypePickerWheel[@value='maio']");
     By verificarData = By.xpath("//android.widget.TextView[@content-desc='Datepicker Display']");
-    String diaDoMes = "//android.view.View[@text='###']";
+    By tirarDataHidden = By.xpath("//XCUIElementTypeButton[@name=\"Hide year picker\"]");
 
-
-    public void elementoDate(){
-        while(!returnElementDisplayedElement(dateClick)){
-            scrollUsingTouchActionsOnlyY(2);
-        }
-        click(dateClick);
-    }
 
     public void procurarAData(){
-        click(procurarAData);
-        waitForElement(procurar1995);
-        click(clicar1995);
+        click(clicarNoData);
+    }
+    public void trocarPicker(){
+        click(trocarMesAno);
+    }
+
+    public void hiddenPicker(){
+        click(tirarDataHidden);
     }
 
     public void procurarOMes(){
-        waitForElement(trocarOMes);
-        click(trocarOMes);
+       swipeElementWithDirection2(By.xpath("(//*[@type='XCUIElementTypePickerWheel'])[1]"),"up");
+       // click(trocarOMes);
     }
 
-    public void trocarODia(String dia) {
-       diaDoMes = diaDoMes.replace("###", dia);
-       waitForElement(By.xpath(diaDoMes));
-       click(By.xpath(diaDoMes));
+    public void procurarOAno(){
+        swipeElementWithDirection2(By.xpath("(//*[@type='XCUIElementTypePickerWheel'])[2]"),"down");
     }
+
 
     public boolean verificarAno(){
-        return getText(verificarData).contains("1995");
+        return getText(clicarNoData).equals("5 de out. de 2028");
     }
 
 

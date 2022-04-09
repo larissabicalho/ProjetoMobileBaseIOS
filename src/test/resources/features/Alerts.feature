@@ -11,5 +11,5 @@ Feature: Home App
   Scenario: Acessa Home
     When clicar no menu lateral
     And clicar no menu Alerts
-    And clicar no botao Toast
-    Then clicar no Toast e validar Mensagem
+    And clicar no botao Modal
+    Then validar Mensagem

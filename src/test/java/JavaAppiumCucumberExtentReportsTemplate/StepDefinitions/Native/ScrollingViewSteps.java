@@ -1,6 +1,6 @@
 package JavaAppiumCucumberExtentReportsTemplate.StepDefinitions.Native;
 
-import JavaAppiumCucumberExtentReportsTemplate.Screens.Native.ContentScrollingScreen;
+import JavaAppiumCucumberExtentReportsTemplate.Screens.Native.ScrollingViewScreen;
 import JavaAppiumCucumberExtentReportsTemplate.Utils.DriverFactory;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
@@ -10,21 +10,21 @@ import org.testng.Assert;
 
 import static JavaAppiumCucumberExtentReportsTemplate.Hooks.Hooks.getScenario;
 
-public class ContentScrollingSteps {
+public class ScrollingViewSteps {
 
-    ContentScrollingScreen contentScrollingScreen;
-    @And("clicar no menu ContentScrolling (.*)")
-    public void clicarNoScrool(String value){
-        contentScrollingScreen = new ContentScrollingScreen();
-        contentScrollingScreen.clicarMenuScrooling();
-        contentScrollingScreen.scroolAteFinalDoTexto(value);
-       // getScenario().embed(((TakesScreenshot) DriverFactory.driver).getScreenshotAs(OutputType.BYTES), "image/png");
+    ScrollingViewScreen scrollingViewScreen;
+    @And("clicar no menu ContentScrolling")
+    public void clicarNoScrool(){
+        scrollingViewScreen = new ScrollingViewScreen();
+        scrollingViewScreen.clicarMenuScrooling();
+        scrollingViewScreen.scroolAteFinalDoTexto();
+        getScenario().embed(((TakesScreenshot) DriverFactory.driver).getScreenshotAs(OutputType.BYTES), "image/png");
     }
 
-    @Then("texto final aparece")
+    @Then("verificar se esta na tela")
     public void verificarTextoAparece(){
-        contentScrollingScreen = new ContentScrollingScreen();
-        Assert.assertTrue(contentScrollingScreen.verificarSeOTextoAparece());
+        scrollingViewScreen = new ScrollingViewScreen();
+        Assert.assertTrue(scrollingViewScreen.verificarSeExiste());
         getScenario().embed(((TakesScreenshot) DriverFactory.driver).getScreenshotAs(OutputType.BYTES), "image/png");
     }
 

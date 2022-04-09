@@ -9,9 +9,10 @@ import org.testng.Assert;
 
 import static JavaAppiumCucumberExtentReportsTemplate.Hooks.Hooks.getScenario;
 
-public class ContentOutOfViewSteps {
+public class OutOfViewSteps {
 
     OutOfViewScreen outOfViewScreen;
+
     @And("clicar no menu ContentOutOfView")
     public void clicarNoScrool(){
         outOfViewScreen = new OutOfViewScreen();

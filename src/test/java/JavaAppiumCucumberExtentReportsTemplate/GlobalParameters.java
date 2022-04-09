@@ -119,7 +119,8 @@ public class GlobalParameters {
         IOSDeviceName = properties.getProperty("IOSDeviceName");
         IOSNoReset= properties.getProperty("IOSNoReset");
         IOSFullReset= properties.getProperty("IOSFullReset");
-        IOSAppPath = Utils.returnPathProject()+"\\src\\test\\resources\\app\\ios\\"+properties.getProperty("IOSAppPath");
+        //ajustar
+        IOSAppPath = "/Users/larissanazarebicalho/ProjetoMobileBaseIOS/src/test/resources/app/"+properties.getProperty("IOSAppPath");
         IOSSendKeyStrategy=properties.getProperty("IOSSendKeyStrategy");
         IOSXcodeCodeId = properties.getProperty("IOSXcodeCodeId");
 

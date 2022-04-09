@@ -3,27 +3,27 @@ package JavaAppiumCucumberExtentReportsTemplate.Screens.Native;
 import JavaAppiumCucumberExtentReportsTemplate.Bases.PageBase;
 import org.openqa.selenium.By;
 
-public class ContentScrollingScreen extends PageBase {
+public class ScrollingViewScreen extends PageBase {
 
-    By menuScrolling = By.xpath("//android.widget.TextView[@text='Content Scrolling']");
-    By textoScrolling = By.className("android.widget.ScrollView");
+    By menuScrolling = By.xpath("//XCUIElementTypeStaticText[@name='Scrolling View']");
+    By finalElemento = By.xpath("//XCUIElementTypeOther[@name='Vertical scroll bar, 3 pages']");
 
     public void clicarMenuScrooling(){
-        while(!returnElementDisplayedElement(menuScrolling)){
-            scrollUsingTouchActionsOnlyY(2);
-        }
         click(menuScrolling);
+    }
+
+
+    public void scroolAteFinalDoTexto(){
+    //    System.out.println(getText(By.xpath("//XCUIElementTypeApplication[@name=\"AWSDeviceFarmiOSReferenceApp-cal\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeStaticText")));
+       topToBottonSwipeTexto();
+       topToBottonSwipeTexto();
 
     }
 
-    public void scroolAteFinalDoTexto(String qtLoop){
-        for(int i =0; i < Integer.parseInt(qtLoop); i ++) {
-            topToBottonSwipe2();
-        }
+    public Boolean verificarSeExiste(){
+        System.out.println(getText(By.xpath("//XCUIElementTypeApplication[@name=\"AWSDeviceFarmiOSReferenceApp-cal\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeStaticText")));
+        return returnElementDisplayed(finalElemento);
     }
 
-    public Boolean verificarSeOTextoAparece(){
-       return returnElementDisplayed(textoScrolling);
-    }
 
 }

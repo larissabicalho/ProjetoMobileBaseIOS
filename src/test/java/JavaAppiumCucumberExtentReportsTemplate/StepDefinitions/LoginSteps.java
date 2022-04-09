@@ -3,6 +3,7 @@ package JavaAppiumCucumberExtentReportsTemplate.StepDefinitions;
 import JavaAppiumCucumberExtentReportsTemplate.Enums.Users;
 import JavaAppiumCucumberExtentReportsTemplate.Flows.LoginFlows;
 import JavaAppiumCucumberExtentReportsTemplate.Screens.LoginScreen;
+import JavaAppiumCucumberExtentReportsTemplate.Screens.MenuScreen;
 import JavaAppiumCucumberExtentReportsTemplate.Utils.Arquivos;
 import JavaAppiumCucumberExtentReportsTemplate.Utils.DriverFactory;
 import io.cucumber.java.en.And;
@@ -48,7 +49,7 @@ public class LoginSteps {
     public void verificarLogin() throws FileNotFoundException {
         loginFlows = new LoginFlows();
         loginScreen = new LoginScreen();
-        Assert.assertEquals(loginScreen.verificarMessageLogin(),"You are logged on as admin");
+        Assert.assertEquals(loginScreen.verificarMessageLogin(),"Logged in as admin");
         getScenario().embed(((TakesScreenshot) DriverFactory.driver).getScreenshotAs(OutputType.BYTES), "image/png");
     }
 
@@ -63,7 +64,7 @@ public class LoginSteps {
     public void verificarLoginErrado() throws FileNotFoundException {
         loginFlows = new LoginFlows();
         loginScreen = new LoginScreen();
-        Assert.assertEquals(loginScreen.verificarMessageLogin(),"You gave me the wrong username and password");
+        Assert.assertEquals(loginScreen.verificarMessageLoginErrado(),"PERMISSION DENIED");
         getScenario().embed(((TakesScreenshot) DriverFactory.driver).getScreenshotAs(OutputType.BYTES), "image/png");
     }
 

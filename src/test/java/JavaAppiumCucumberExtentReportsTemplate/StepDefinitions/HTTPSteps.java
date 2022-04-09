@@ -1,6 +1,6 @@
 package JavaAppiumCucumberExtentReportsTemplate.StepDefinitions;
 
-import JavaAppiumCucumberExtentReportsTemplate.Screens.WebScreen;
+import JavaAppiumCucumberExtentReportsTemplate.Screens.HTTPScreen;
 import JavaAppiumCucumberExtentReportsTemplate.Utils.DriverFactory;
 import io.cucumber.core.api.Scenario;
 import io.cucumber.java.en.And;
@@ -11,30 +11,30 @@ import org.testng.Assert;
 
 import static JavaAppiumCucumberExtentReportsTemplate.Hooks.Hooks.getScenario;
 
-public class WebSteps {
+public class HTTPSteps {
 
     Scenario scenario;
-    WebScreen webScreen;
+    HTTPScreen HTTPScreen;
 
     @And("entrar no site")
     public void entrarNoSiteGoogle() {
-        webScreen = new WebScreen();
-        webScreen.clicarELimparHome();
+        HTTPScreen = new HTTPScreen();
+        HTTPScreen.clicarELimparHome();
         getScenario().embed(((TakesScreenshot) DriverFactory.driver).getScreenshotAs(OutputType.BYTES), "image/png");
     }
 
     @And("selecionar o site (.*)")
     public void selecionarOSite(String site){
-        webScreen = new WebScreen();
-        webScreen.preencherSite(site);
-        webScreen.clicarNoEnterParaSite();
+        HTTPScreen = new HTTPScreen();
+        HTTPScreen.preencherSite(site);
+        HTTPScreen.clicarNoEnterParaSite();
         getScenario().embed(((TakesScreenshot) DriverFactory.driver).getScreenshotAs(OutputType.BYTES), "image/png");
     }
 
     @Then("valido o site")
     public void validarOSite(){
-        webScreen = new WebScreen();
-        Assert.assertEquals(webScreen.validarMensagemGoogle(), "Google");
+        HTTPScreen = new HTTPScreen();
+        Assert.assertEquals(HTTPScreen.validarMensagemGoogle(), "Google");
         getScenario().embed(((TakesScreenshot) DriverFactory.driver).getScreenshotAs(OutputType.BYTES), "image/png");
     }
 

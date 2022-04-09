@@ -1,7 +1,5 @@
 package JavaAppiumCucumberExtentReportsTemplate.StepDefinitions.Input;
 
-import JavaAppiumCucumberExtentReportsTemplate.Screens.Input.CheckboxScreen;
-import JavaAppiumCucumberExtentReportsTemplate.Screens.Input.TextFieldScreen;
 import JavaAppiumCucumberExtentReportsTemplate.Screens.Input.ToggleButtonScreen;
 import JavaAppiumCucumberExtentReportsTemplate.Utils.DriverFactory;
 import io.cucumber.java.en.And;
@@ -18,7 +16,7 @@ public class ToggleButtonSteps {
     @And("clicar no menu ToggleButton")
     public void clicarNoMenuToggleButton(){
         toggleButtonScreen = new ToggleButtonScreen();
-        toggleButtonScreen.elementoToggle();
+    //    toggleButtonScreen.elementoToggle();
         getScenario().embed(((TakesScreenshot) DriverFactory.driver).getScreenshotAs(OutputType.BYTES), "image/png");
     }
 
@@ -32,7 +30,7 @@ public class ToggleButtonSteps {
     @Then("verificar se toggle foi clicado")
     public void verificarToggleOn(){
         toggleButtonScreen = new ToggleButtonScreen();
-        Assert.assertTrue(toggleButtonScreen.verificarToggle());
+        Assert.assertEquals(toggleButtonScreen.verificarToggle(),"1");
         getScenario().embed(((TakesScreenshot) DriverFactory.driver).getScreenshotAs(OutputType.BYTES), "image/png");
     }
 }

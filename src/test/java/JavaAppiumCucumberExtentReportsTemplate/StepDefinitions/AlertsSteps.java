@@ -1,9 +1,6 @@
 package JavaAppiumCucumberExtentReportsTemplate.StepDefinitions;
 
-import JavaAppiumCucumberExtentReportsTemplate.Bases.ReadToastMessage;
 import JavaAppiumCucumberExtentReportsTemplate.Screens.AlertsScreen;
-import JavaAppiumCucumberExtentReportsTemplate.Screens.CrashScreen;
-import JavaAppiumCucumberExtentReportsTemplate.Screens.Input.SubmitScreen;
 import JavaAppiumCucumberExtentReportsTemplate.Utils.DriverFactory;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
@@ -20,16 +17,11 @@ public class AlertsSteps {
 
     AlertsScreen alertsScreen;
 
-    @Then("clicar no Toast e validar Mensagem")
+    @Then("validar Mensagem")
     public void clicarToastMenu() throws TesseractException, IOException {
         alertsScreen = new AlertsScreen();
-        ReadToastMessage rdm = new ReadToastMessage();
 
-        String msgEsperada = "Toast";
-
-        String msgRetornada = alertsScreen.elementoToast();
-
-        Assert.assertTrue(msgRetornada.contains(msgEsperada));
+        Assert.assertEquals(alertsScreen.elementoToast(),"This is a modal view");
 
         getScenario().embed(((TakesScreenshot) DriverFactory.driver).getScreenshotAs(OutputType.BYTES), "image/png");
     }
@@ -41,17 +33,17 @@ public class AlertsSteps {
         getScenario().embed(((TakesScreenshot) DriverFactory.driver).getScreenshotAs(OutputType.BYTES), "image/png");
     }
 
-    @And("clicar no botao Toast")
+    @And("clicar no botao Modal")
     public void xpto2(){
         alertsScreen = new AlertsScreen();
-        alertsScreen.clicarNoToast();
+        alertsScreen.clicarNoModal();
         getScenario().embed(((TakesScreenshot) DriverFactory.driver).getScreenshotAs(OutputType.BYTES), "image/png");
     }
 
     @Then("verificar a mensagem do alerta")
     public void xpto3(){
         alertsScreen = new AlertsScreen();
-        Assert.assertEquals(alertsScreen.getAlertText(),"This is the alert message");
+        Assert.assertEquals(alertsScreen.getAlertText(),"OK");
         getScenario().embed(((TakesScreenshot) DriverFactory.driver).getScreenshotAs(OutputType.BYTES), "image/png");
     }
 

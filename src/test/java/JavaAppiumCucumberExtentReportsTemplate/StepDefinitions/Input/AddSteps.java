@@ -1,7 +1,6 @@
 package JavaAppiumCucumberExtentReportsTemplate.StepDefinitions.Input;
 
-import JavaAppiumCucumberExtentReportsTemplate.Screens.Input.CheckboxScreen;
-import JavaAppiumCucumberExtentReportsTemplate.Screens.Input.TextFieldScreen;
+import JavaAppiumCucumberExtentReportsTemplate.Screens.Input.AddScreen;
 import JavaAppiumCucumberExtentReportsTemplate.Utils.DriverFactory;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
@@ -11,28 +10,37 @@ import org.testng.Assert;
 
 import static JavaAppiumCucumberExtentReportsTemplate.Hooks.Hooks.getScenario;
 
-public class CheckboxSteps {
+public class AddSteps {
 
-    CheckboxScreen checkboxScreen;
+    AddScreen addScreen;
 
-    @And("clicar no menu Checkbox")
-    public void clicarNoMenuCheckbox(){
-        checkboxScreen = new CheckboxScreen();
-        checkboxScreen.elementoCheckbox();
+    @And("clicar no moreInfo")
+    public void clicarNoAdd(){
+        addScreen = new AddScreen();
+        addScreen.clicarNoAdd();
         getScenario().embed(((TakesScreenshot) DriverFactory.driver).getScreenshotAs(OutputType.BYTES), "image/png");
     }
 
-    @And("clicar no checkbox")
-    public void clicarNoCheckbox(){
-        checkboxScreen = new CheckboxScreen();
-        checkboxScreen.clicarCheckbox();
+    @And("clicar no information")
+    public void clicarNoInformationButton(){
+        addScreen = new AddScreen();
+        addScreen.clicarNoInformation();
         getScenario().embed(((TakesScreenshot) DriverFactory.driver).getScreenshotAs(OutputType.BYTES), "image/png");
     }
 
-    @Then("verificar se o checkbox foi clicado")
-    public void verificarCheckbox(){
-        checkboxScreen = new CheckboxScreen();
-        Assert.assertEquals(checkboxScreen.verificarTextoCheckbox(), "Checked");
+
+
+    @Then("verificar se o add foi clicado")
+    public void verificarAdd(){
+        addScreen = new AddScreen();
+        Assert.assertEquals(addScreen.verificarTextoAdd(), "add");
+        getScenario().embed(((TakesScreenshot) DriverFactory.driver).getScreenshotAs(OutputType.BYTES), "image/png");
+    }
+
+    @Then("verificar se o information")
+    public void verificarInfo(){
+        addScreen = new AddScreen();
+        Assert.assertEquals(addScreen.verificarTextoInfo(), "More Info");
         getScenario().embed(((TakesScreenshot) DriverFactory.driver).getScreenshotAs(OutputType.BYTES), "image/png");
     }
 }

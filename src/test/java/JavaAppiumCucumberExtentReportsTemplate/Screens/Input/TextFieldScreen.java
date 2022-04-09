@@ -5,9 +5,10 @@ import org.openqa.selenium.By;
 
 public class TextFieldScreen extends PageBase {
 
-    By textField = By.id("com.amazonaws.devicefarm.android.referenceapp:id/input_edit_text");
+    By textField = By.xpath("//*[@type='XCUIElementTypeTextView']");
 
     public void escreverTexto(String texto){
+        clear(textField);
         sendKeys(textField, texto);
     }
 

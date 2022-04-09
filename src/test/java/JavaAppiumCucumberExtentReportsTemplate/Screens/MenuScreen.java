@@ -7,27 +7,23 @@ import org.openqa.selenium.By;
 public class MenuScreen extends PageBase {
 
 
-    By inputControlMenu = By.xpath("(//android.widget.TextView[@content-desc=\"Row Category Name\"])[4]");
+    By inputControlMenu = By.xpath("//XCUIElementTypeButton[@name='Inputs']");
 
-    By loginPageMenu = By.xpath("//android.widget.TextView[@text='Login Page']");
+    By loginPageMenu = By.xpath("//XCUIElementTypeStaticText[@name='Login']");
 
-    By homeMenu = By.xpath("//android.widget.TextView[@text='Home']");
+    By homeMenu = By.xpath("//XCUIElementTypeButton[@name='Home']");
 
-    By webMenu = By.xpath("//android.widget.TextView[@text='Web']");
+    By httpMenu = By.xpath("//XCUIElementTypeButton[@name='HTTP']");
 
-    By nativeMenu = By.xpath("//android.widget.TextView[@text='Native Components']");
+    By nativeMenu = By.xpath("//XCUIElementTypeButton[@name='Native']");
 
-    By nestedViewsMenu = By.xpath("//android.widget.TextView[@text='Nested Views']");
+    By nestedViewsMenu = By.xpath("//XCUIElementTypeStaticText[@name=\"Nested\"]");
 
-    By crashBugMenu = By.xpath("//android.widget.TextView[@text='Crash/Bug']");
+    By crashBugMenu = By.xpath("//XCUIElementTypeStaticText[@name=\"Crash\"]");
 
-    By alertsMenu = By.xpath("//android.widget.TextView[@text='Alerts']");
+    By alertsMenu = By.xpath("//XCUIElementTypeStaticText[@name=\"Alerts\"]");
 
-    By localMenu = By.xpath("//android.widget.TextView[@text='Local Web View']");
-
-    By fixturesMenu = By.xpath("//android.widget.TextView[@text='Fixtures']");
-
-    By clicarPermitir = By.id("android:id/button1");
+    By webMenu = By.xpath("//XCUIElementTypeStaticText[@name=\"Web\"]");
 
     public void clicarMenuInputControl(){
         click(inputControlMenu);
@@ -46,11 +42,12 @@ public class MenuScreen extends PageBase {
         click(homeMenu);
     }
 
-    public void clicarMenuWeb(){
-        click(webMenu);
+    public void clicarMenuHttp(){
+        click(httpMenu);
     }
 
     public void clicarMenuNative(){
+        waitForElement(nativeMenu);
         click(nativeMenu);
     }
 
@@ -58,28 +55,13 @@ public class MenuScreen extends PageBase {
         click(nestedViewsMenu);
     }
 
+    public void clicarMenuWeb(){
+        click(webMenu);
+    }
+
     public void clicarMenuCrash(){
         click(crashBugMenu);
     }
-
-    public void clicarMenuLocalWeb(){
-        scrollTexto(loginPageMenu);
-        click(localMenu);
-    }
-
-    public void clicarMenuFixtures(){
-        scrollTexto(loginPageMenu);
-        click(fixturesMenu);
-    }
-
-    public void clicarMenuFixturesBlu(){
-        validarComando();
-        click(clicarPermitir);
-        scrollTexto(loginPageMenu);
-        click(fixturesMenu);
-    }
-
-
 
 }
 
