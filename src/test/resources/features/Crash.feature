@@ -1,7 +1,7 @@
-Feature: Home App
+Feature: Crash
 
   @app
-  Scenario: Acessa Home
+  Scenario: Verificar Botao Crash
     When clicar no menu lateral
     And clicar no menu Crash
     Then verificar se existe o botao crash

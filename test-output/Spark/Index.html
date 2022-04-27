@@ -60,7 +60,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">abr 06, 2022 01:52:59</span>
+                    <span class="badge badge-primary">abr 26, 2022 23:18:33</span>
                 </a>
             </li>
         </ul>
@@ -82,6 +82,14 @@
             <i class="fa fa-tag"></i>
           </span>
           <span class="title">Tags</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown" onclick="toggleView('exception-view')">
+        <a id="nav-ex" class="dropdown-toggle" href="exception.html">
+          <span class="icon-holder">
+            <i class="fa fa-bug"></i>
+          </span>
+          <span class="title">Exception</span>
         </a>
       </li>
       <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -113,7 +121,7 @@
 					</a>
 					<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 						<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success pull-right"></span></a>
-						
+						<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>
 						
 						
 						
@@ -128,6 +136,7 @@
 					</a>
 					<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
 						<a class="dropdown-item" href="#">@app</a>
+						<a class="dropdown-item" href="#">@naoRodarBrowserstack</a>
 					</ul>
 				</li>
 			</ul>
@@ -143,19 +152,19 @@
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">Home App</p>
-							<p class="duration text-sm">0h 0m 12s+969ms</p>
-							<span class="datetime">01:53:06 AM</span>
+							<p class="name">Alerts</p>
+							<p class="duration text-sm">0h 0m 19s+398ms</p>
+							<span class="datetime">23:18:40 PM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-pass">Home App</h5>
-									<span class='badge badge-success'>04.06.2022 01:53:06</span>
-									<span class='badge badge-danger'>04.06.2022 01:53:19</span>
-									<span class='badge badge-default'>0h 0m 12s+969ms</span>
+									<h5 class="test-status text-pass">Alerts</h5>
+									<span class='badge badge-success'>04.26.2022 23:18:40</span>
+									<span class='badge badge-danger'>04.26.2022 23:18:59</span>
+									<span class='badge badge-default'>0h 0m 19s+398ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -164,6 +173,244 @@
 						</div>
 
 <div class="accordion mt-4">
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Testar Botao Alerta</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+					<div class="status-avatar float-right mr-4">
+						<i class="fa fa-paperclip"></i>
+					</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start when" title="HomeSteps.clicarLateral()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When clicar no menu lateral</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded1.png' src='../embedded1.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="MenuSteps.menuAlerts()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And clicar no menu Alerts</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded2.png' src='../embedded2.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="AlertsSteps.validarAlert()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And clicar no botao Alert</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded3.png' src='../embedded3.png'></div>
+							<div class="d-flex align-items-center justify-content-start then" title="AlertsSteps.validarAlerta()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then verificar a mensagem do alerta</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded4.png' src='../embedded4.png'></div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Testar Modal</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+					<div class="status-avatar float-right mr-4">
+						<i class="fa fa-paperclip"></i>
+					</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start when" title="HomeSteps.clicarLateral()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When clicar no menu lateral</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded5.png' src='../embedded5.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="MenuSteps.menuAlerts()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And clicar no menu Alerts</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded6.png' src='../embedded6.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="AlertsSteps.validarModal()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And clicar no botao Modal</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded7.png' src='../embedded7.png'></div>
+							<div class="d-flex align-items-center justify-content-start then" title="AlertsSteps.clicarToastMenu()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then validar Mensagem</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded8.png' src='../embedded8.png'></div>
+					</div>
+				</div>
+	</div>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="12"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Crash</p>
+							<p class="duration text-sm">0h 0m 3s+481ms</p>
+							<span class="datetime">23:19:06 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Crash</h5>
+									<span class='badge badge-success'>04.26.2022 23:19:06</span>
+									<span class='badge badge-danger'>04.26.2022 23:19:10</span>
+									<span class='badge badge-default'>0h 0m 3s+481ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+
+<div class="accordion mt-4">
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Verificar Botao Crash</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+					<div class="status-avatar float-right mr-4">
+						<i class="fa fa-paperclip"></i>
+					</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start when" title="HomeSteps.clicarLateral()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When clicar no menu lateral</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded9.png' src='../embedded9.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="MenuSteps.menuCrash()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And clicar no menu Crash</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded10.png' src='../embedded10.png'></div>
+							<div class="d-flex align-items-center justify-content-start then" title="CrashSteps.verificarCrash()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then verificar se existe o botao crash</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded11.png' src='../embedded11.png'></div>
+					</div>
+				</div>
+	</div>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="17"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Home App</p>
+							<p class="duration text-sm">0h 0m 10s+718ms</p>
+							<span class="datetime">23:19:16 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Home App</h5>
+									<span class='badge badge-success'>04.26.2022 23:19:16</span>
+									<span class='badge badge-danger'>04.26.2022 23:19:27</span>
+									<span class='badge badge-default'>0h 0m 10s+718ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+
+<div class="accordion mt-4">
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Acessa Home</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+					<div class="status-avatar float-right mr-4">
+						<i class="fa fa-paperclip"></i>
+					</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start when" title="MenuSteps.menuHome()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When clicar no menu Home</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded12.png' src='../embedded12.png'></div>
+							<div class="d-flex align-items-center justify-content-start then" title="HomeSteps.validarHome()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then valido frase Home</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded13.png' src='../embedded13.png'></div>
+					</div>
+				</div>
+	</div>
 	<div class="card">
 		<div class="card-header" role="tab">
 			<div class="card-title pl-3">
@@ -178,22 +425,2039 @@
 		</div>
 				<div class="collapse">
 					<div class="card-body">
-							<div class="d-flex align-items-center justify-content-start when" title="HomeSteps.xpto1()">
+							<div class="d-flex align-items-center justify-content-start when" title="MenuSteps.menuHome()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When clicar no menu Home</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded14.png' src='../embedded14.png'></div>
+							<div class="d-flex align-items-center justify-content-start then" title="HomeSteps.validarHome()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then valido frase Home</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded15.png' src='../embedded15.png'></div>
+					</div>
+				</div>
+	</div>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="24"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Http</p>
+							<p class="duration text-sm">0h 0m 17s+219ms</p>
+							<span class="datetime">23:19:34 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Http</h5>
+									<span class='badge badge-success'>04.26.2022 23:19:34</span>
+									<span class='badge badge-danger'>04.26.2022 23:19:51</span>
+									<span class='badge badge-default'>0h 0m 17s+219ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+
+<div class="accordion mt-4">
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Verificar Se Acessou o Google</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+					<div class="status-avatar float-right mr-4">
+						<i class="fa fa-paperclip"></i>
+					</div>
+			</div>
+		</div>
+				<div class="collapse scenario_outline">
+						<div class="card-body l1">
+							<div class="card-header" role="tab">
+								<div class="card-title outline-child">
+									<div class="node">Verificar Se Acessou o Google</div>
+									<div class="status-avatar float-left pass-bg">
+										<i class="fa fa-check text-white"></i>
+									</div>
+										<div class="status-avatar float-right">
+											<i class="fa fa-paperclip"></i>
+										</div>
+								</div>
+							</div>
+							<div class="card-body collapse mt-3">
+									<div class="d-flex align-items-center justify-content-start when" title="MenuSteps.menuHttp()">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>When clicar no menu HTTP</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded16.png' src='../embedded16.png'></div>
+									<div class="d-flex align-items-center justify-content-start and" title="HTTPSteps.entrarNoSiteGoogle()">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>And entrar no site</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded17.png' src='../embedded17.png'></div>
+									<div class="d-flex align-items-center justify-content-start and" title="HTTPSteps.selecionarOSite(String)">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>And selecionar o site https://www.google.com.br</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded18.png' src='../embedded18.png'></div>
+									<div class="d-flex align-items-center justify-content-start then" title="HTTPSteps.validarOSite()">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>Then valido o site</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded19.png' src='../embedded19.png'></div>
+							</div>
+						</div>
+				</div>
+	</div>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="fail" test-id="31"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar fail-bg">
+						<i class="fa fa-times text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Input</p>
+							<p class="duration text-sm">0h 9m 56s+87ms</p>
+							<span class="datetime">23:19:59 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-fail">Input</h5>
+									<span class='badge badge-success'>04.26.2022 23:19:59</span>
+									<span class='badge badge-danger'>04.26.2022 23:29:55</span>
+									<span class='badge badge-default'>0h 9m 56s+87ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+
+<div class="accordion mt-4">
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Texto</div>
+				<div class="status-avatar float-left fail-bg">
+					<i class="fa fa-times text-white"></i>
+				</div>
+					<div class="status-avatar float-right mr-4">
+						<i class="fa fa-paperclip"></i>
+					</div>
+			</div>
+		</div>
+				<div class="collapse scenario_outline">
+						<div class="card-body l1">
+							<div class="card-header" role="tab">
+								<div class="card-title outline-child">
+									<div class="node">Texto</div>
+									<div class="status-avatar float-left fail-bg">
+										<i class="fa fa-times text-white"></i>
+									</div>
+										<div class="status-avatar float-right">
+											<i class="fa fa-paperclip"></i>
+										</div>
+								</div>
+							</div>
+							<div class="card-body collapse mt-3">
+									<div class="d-flex align-items-center justify-content-start when" title="MenuSteps.menuInput()">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>When clicar no menu Input</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded20.png' src='../embedded20.png'></div>
+									<div class="d-flex align-items-center justify-content-start and" title="TextFieldSteps.clicarNoVideoPlayer(String)">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>And escrever Texto Texto 2</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded21.png' src='../embedded21.png'></div>
+									<div class="d-flex align-items-center justify-content-start then" title="TextFieldSteps.verificarTexto(String)">
+										<span class="alert-icon fail-bg">
+											<i class="fa fa-times text-white"></i>
+										</span>
+										<span>Then verificar se o texto esta escrito Texto 2</span>
+									</div>
+				<textarea disabled class="code-block">java.lang.AssertionError: expected [Texto 2] but found [Texto 2I am a textview]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.DesafioIOS.StepDefinitions.Input.TextFieldSteps.verificarTexto(TextFieldSteps.java:29)
+	at ✽.verificar se o texto esta escrito Texto 2(file:src/test/resources/features/Input.feature:6)
+</textarea>
+							</div>
+						</div>
+						<div class="card-body l1">
+							<div class="card-header" role="tab">
+								<div class="card-title outline-child">
+									<div class="node">Texto</div>
+									<div class="status-avatar float-left fail-bg">
+										<i class="fa fa-times text-white"></i>
+									</div>
+										<div class="status-avatar float-right">
+											<i class="fa fa-paperclip"></i>
+										</div>
+								</div>
+							</div>
+							<div class="card-body collapse mt-3">
+									<div class="d-flex align-items-center justify-content-start when" title="MenuSteps.menuInput()">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>When clicar no menu Input</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded22.png' src='../embedded22.png'></div>
+									<div class="d-flex align-items-center justify-content-start and" title="TextFieldSteps.clicarNoVideoPlayer(String)">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>And escrever Texto Texto 3</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded23.png' src='../embedded23.png'></div>
+									<div class="d-flex align-items-center justify-content-start then" title="TextFieldSteps.verificarTexto(String)">
+										<span class="alert-icon fail-bg">
+											<i class="fa fa-times text-white"></i>
+										</span>
+										<span>Then verificar se o texto esta escrito Texto 3</span>
+									</div>
+				<textarea disabled class="code-block">java.lang.AssertionError: expected [Texto 3] but found [Texto 3I am a textview]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.DesafioIOS.StepDefinitions.Input.TextFieldSteps.verificarTexto(TextFieldSteps.java:29)
+	at ✽.verificar se o texto esta escrito Texto 3(file:src/test/resources/features/Input.feature:6)
+</textarea>
+							</div>
+						</div>
+						<div class="card-body l1">
+							<div class="card-header" role="tab">
+								<div class="card-title outline-child">
+									<div class="node">Texto</div>
+									<div class="status-avatar float-left fail-bg">
+										<i class="fa fa-times text-white"></i>
+									</div>
+										<div class="status-avatar float-right">
+											<i class="fa fa-paperclip"></i>
+										</div>
+								</div>
+							</div>
+							<div class="card-body collapse mt-3">
+									<div class="d-flex align-items-center justify-content-start when" title="MenuSteps.menuInput()">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>When clicar no menu Input</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded24.png' src='../embedded24.png'></div>
+									<div class="d-flex align-items-center justify-content-start and" title="TextFieldSteps.clicarNoVideoPlayer(String)">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>And escrever Texto Texto 4</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded25.png' src='../embedded25.png'></div>
+									<div class="d-flex align-items-center justify-content-start then" title="TextFieldSteps.verificarTexto(String)">
+										<span class="alert-icon fail-bg">
+											<i class="fa fa-times text-white"></i>
+										</span>
+										<span>Then verificar se o texto esta escrito Texto 4</span>
+									</div>
+				<textarea disabled class="code-block">java.lang.AssertionError: expected [Texto 4] but found [Texto 4I am a textview]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.DesafioIOS.StepDefinitions.Input.TextFieldSteps.verificarTexto(TextFieldSteps.java:29)
+	at ✽.verificar se o texto esta escrito Texto 4(file:src/test/resources/features/Input.feature:6)
+</textarea>
+							</div>
+						</div>
+						<div class="card-body l1">
+							<div class="card-header" role="tab">
+								<div class="card-title outline-child">
+									<div class="node">Texto</div>
+									<div class="status-avatar float-left fail-bg">
+										<i class="fa fa-times text-white"></i>
+									</div>
+										<div class="status-avatar float-right">
+											<i class="fa fa-paperclip"></i>
+										</div>
+								</div>
+							</div>
+							<div class="card-body collapse mt-3">
+									<div class="d-flex align-items-center justify-content-start when" title="MenuSteps.menuInput()">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>When clicar no menu Input</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded26.png' src='../embedded26.png'></div>
+									<div class="d-flex align-items-center justify-content-start and" title="TextFieldSteps.clicarNoVideoPlayer(String)">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>And escrever Texto Texto 5</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded27.png' src='../embedded27.png'></div>
+									<div class="d-flex align-items-center justify-content-start then" title="TextFieldSteps.verificarTexto(String)">
+										<span class="alert-icon fail-bg">
+											<i class="fa fa-times text-white"></i>
+										</span>
+										<span>Then verificar se o texto esta escrito Texto 5</span>
+									</div>
+				<textarea disabled class="code-block">java.lang.AssertionError: expected [Texto 5] but found [Texto 5I am a textview]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.DesafioIOS.StepDefinitions.Input.TextFieldSteps.verificarTexto(TextFieldSteps.java:29)
+	at ✽.verificar se o texto esta escrito Texto 5(file:src/test/resources/features/Input.feature:6)
+</textarea>
+							</div>
+						</div>
+						<div class="card-body l1">
+							<div class="card-header" role="tab">
+								<div class="card-title outline-child">
+									<div class="node">Texto</div>
+									<div class="status-avatar float-left fail-bg">
+										<i class="fa fa-times text-white"></i>
+									</div>
+										<div class="status-avatar float-right">
+											<i class="fa fa-paperclip"></i>
+										</div>
+								</div>
+							</div>
+							<div class="card-body collapse mt-3">
+									<div class="d-flex align-items-center justify-content-start when" title="MenuSteps.menuInput()">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>When clicar no menu Input</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded28.png' src='../embedded28.png'></div>
+									<div class="d-flex align-items-center justify-content-start and" title="TextFieldSteps.clicarNoVideoPlayer(String)">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>And escrever Texto Texto 6</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded29.png' src='../embedded29.png'></div>
+									<div class="d-flex align-items-center justify-content-start then" title="TextFieldSteps.verificarTexto(String)">
+										<span class="alert-icon fail-bg">
+											<i class="fa fa-times text-white"></i>
+										</span>
+										<span>Then verificar se o texto esta escrito Texto 6</span>
+									</div>
+				<textarea disabled class="code-block">java.lang.AssertionError: expected [Texto 6] but found [Texto 6I am a textview]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.DesafioIOS.StepDefinitions.Input.TextFieldSteps.verificarTexto(TextFieldSteps.java:29)
+	at ✽.verificar se o texto esta escrito Texto 6(file:src/test/resources/features/Input.feature:6)
+</textarea>
+							</div>
+						</div>
+						<div class="card-body l1">
+							<div class="card-header" role="tab">
+								<div class="card-title outline-child">
+									<div class="node">Texto</div>
+									<div class="status-avatar float-left fail-bg">
+										<i class="fa fa-times text-white"></i>
+									</div>
+										<div class="status-avatar float-right">
+											<i class="fa fa-paperclip"></i>
+										</div>
+								</div>
+							</div>
+							<div class="card-body collapse mt-3">
+									<div class="d-flex align-items-center justify-content-start when" title="MenuSteps.menuInput()">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>When clicar no menu Input</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded30.png' src='../embedded30.png'></div>
+									<div class="d-flex align-items-center justify-content-start and" title="TextFieldSteps.clicarNoVideoPlayer(String)">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>And escrever Texto Texto 7</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded31.png' src='../embedded31.png'></div>
+									<div class="d-flex align-items-center justify-content-start then" title="TextFieldSteps.verificarTexto(String)">
+										<span class="alert-icon fail-bg">
+											<i class="fa fa-times text-white"></i>
+										</span>
+										<span>Then verificar se o texto esta escrito Texto 7</span>
+									</div>
+				<textarea disabled class="code-block">java.lang.AssertionError: expected [Texto 7] but found [Texto 7I am a textview]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.DesafioIOS.StepDefinitions.Input.TextFieldSteps.verificarTexto(TextFieldSteps.java:29)
+	at ✽.verificar se o texto esta escrito Texto 7(file:src/test/resources/features/Input.feature:6)
+</textarea>
+							</div>
+						</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Information</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+					<div class="status-avatar float-right mr-4">
+						<i class="fa fa-paperclip"></i>
+					</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start when" title="MenuSteps.menuInput()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When clicar no menu Input</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded32.png' src='../embedded32.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="InputSteps.clicarNoMenuAdd()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And clicar no segundo Info</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded33.png' src='../embedded33.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="AddSteps.clicarNoAdd()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And clicar no moreInfo</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded34.png' src='../embedded34.png'></div>
+							<div class="d-flex align-items-center justify-content-start then" title="AddSteps.verificarInfo()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then verificar se o information</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded35.png' src='../embedded35.png'></div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Add information</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+					<div class="status-avatar float-right mr-4">
+						<i class="fa fa-paperclip"></i>
+					</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start when" title="MenuSteps.menuInput()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When clicar no menu Input</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded36.png' src='../embedded36.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="InputSteps.clicarNoMenuAdd()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And clicar no segundo Info</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded37.png' src='../embedded37.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="AddSteps.clicarNoAdd()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And clicar no moreInfo</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded38.png' src='../embedded38.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="AddSteps.clicarNoInformationButton()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And clicar no information</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded39.png' src='../embedded39.png'></div>
+							<div class="d-flex align-items-center justify-content-start then" title="AddSteps.verificarAdd()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then verificar se o add foi clicado</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded40.png' src='../embedded40.png'></div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">DataPicker</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+					<div class="status-avatar float-right mr-4">
+						<i class="fa fa-paperclip"></i>
+					</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start when" title="MenuSteps.menuInput()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When clicar no menu Input</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded41.png' src='../embedded41.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="InputSteps.clicarNoMenuData()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And clicar no terceiro Info</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded42.png' src='../embedded42.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="DatePickerSteps.clicarNaData()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And procurar no DataPicker</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded43.png' src='../embedded43.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="DatePickerSteps.mudarODia()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And trocar o Picker</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded44.png' src='../embedded44.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="DatePickerSteps.mudarMes()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And trocar o mes</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded45.png' src='../embedded45.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="DatePickerSteps.mudarAno()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And trocar o ano</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded46.png' src='../embedded46.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="DatePickerSteps.mudarOHidden()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And trocar o hidden</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded47.png' src='../embedded47.png'></div>
+							<div class="d-flex align-items-center justify-content-start then" title="DatePickerSteps.verificarOMes()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then verificar a data</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded48.png' src='../embedded48.png'></div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Label1</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+					<div class="status-avatar float-right mr-4">
+						<i class="fa fa-paperclip"></i>
+					</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start when" title="MenuSteps.menuInput()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When clicar no menu Input</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded49.png' src='../embedded49.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="InputSteps.clicarNoLabel()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And clicar no quarta Info</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded50.png' src='../embedded50.png'></div>
+							<div class="d-flex align-items-center justify-content-start then" title="LabelSteps.verificarLabel1()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then verificar Label 1</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded51.png' src='../embedded51.png'></div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Label2</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+					<div class="status-avatar float-right mr-4">
+						<i class="fa fa-paperclip"></i>
+					</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start when" title="MenuSteps.menuInput()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When clicar no menu Input</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded52.png' src='../embedded52.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="InputSteps.clicarNoLabel()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And clicar no quarta Info</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded53.png' src='../embedded53.png'></div>
+							<div class="d-flex align-items-center justify-content-start then" title="LabelSteps.verificarLabe2()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then verificar Label 2</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded54.png' src='../embedded54.png'></div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Verificar Quantidade de Label</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+					<div class="status-avatar float-right mr-4">
+						<i class="fa fa-paperclip"></i>
+					</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start when" title="MenuSteps.menuInput()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When clicar no menu Input</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded55.png' src='../embedded55.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="InputSteps.clicarNoLabel()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And clicar no quarta Info</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded56.png' src='../embedded56.png'></div>
+							<div class="d-flex align-items-center justify-content-start then" title="LabelSteps.verificarQuantidadeLabel()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then verificar quantidade de label</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded57.png' src='../embedded57.png'></div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Toogle</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+					<div class="status-avatar float-right mr-4">
+						<i class="fa fa-paperclip"></i>
+					</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start when" title="MenuSteps.menuInput()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When clicar no menu Input</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded58.png' src='../embedded58.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="InputSteps.clicarNoToogle()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And clicar no sexta Info</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded59.png' src='../embedded59.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="ToggleButtonSteps.clicarNoToggle()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And clicar no toggle</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded60.png' src='../embedded60.png'></div>
+							<div class="d-flex align-items-center justify-content-start then" title="ToggleButtonSteps.verificarToggleOn()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then verificar se toggle foi clicado</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded61.png' src='../embedded61.png'></div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Spinner</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+					<div class="status-avatar float-right mr-4">
+						<i class="fa fa-paperclip"></i>
+					</div>
+			</div>
+		</div>
+				<div class="collapse scenario_outline">
+						<div class="card-body l1">
+							<div class="card-header" role="tab">
+								<div class="card-title outline-child">
+									<div class="node">Spinner</div>
+									<div class="status-avatar float-left pass-bg">
+										<i class="fa fa-check text-white"></i>
+									</div>
+										<div class="status-avatar float-right">
+											<i class="fa fa-paperclip"></i>
+										</div>
+								</div>
+							</div>
+							<div class="card-body collapse mt-3">
+									<div class="d-flex align-items-center justify-content-start when" title="MenuSteps.menuInput()">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>When clicar no menu Input</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded62.png' src='../embedded62.png'></div>
+									<div class="d-flex align-items-center justify-content-start and" title="InputSteps.clicarNoSpinner()">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>And clicar no nona Info</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded63.png' src='../embedded63.png'></div>
+									<div class="d-flex align-items-center justify-content-start and" title="SpinnerSteps.clicarNoSpinner(String)">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>And clicar no spinner Selection 1</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded64.png' src='../embedded64.png'></div>
+							</div>
+						</div>
+						<div class="card-body l1">
+							<div class="card-header" role="tab">
+								<div class="card-title outline-child">
+									<div class="node">Spinner</div>
+									<div class="status-avatar float-left pass-bg">
+										<i class="fa fa-check text-white"></i>
+									</div>
+										<div class="status-avatar float-right">
+											<i class="fa fa-paperclip"></i>
+										</div>
+								</div>
+							</div>
+							<div class="card-body collapse mt-3">
+									<div class="d-flex align-items-center justify-content-start when" title="MenuSteps.menuInput()">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>When clicar no menu Input</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded65.png' src='../embedded65.png'></div>
+									<div class="d-flex align-items-center justify-content-start and" title="InputSteps.clicarNoSpinner()">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>And clicar no nona Info</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded66.png' src='../embedded66.png'></div>
+									<div class="d-flex align-items-center justify-content-start and" title="SpinnerSteps.clicarNoSpinner(String)">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>And clicar no spinner Selection 2</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded67.png' src='../embedded67.png'></div>
+							</div>
+						</div>
+						<div class="card-body l1">
+							<div class="card-header" role="tab">
+								<div class="card-title outline-child">
+									<div class="node">Spinner</div>
+									<div class="status-avatar float-left pass-bg">
+										<i class="fa fa-check text-white"></i>
+									</div>
+										<div class="status-avatar float-right">
+											<i class="fa fa-paperclip"></i>
+										</div>
+								</div>
+							</div>
+							<div class="card-body collapse mt-3">
+									<div class="d-flex align-items-center justify-content-start when" title="MenuSteps.menuInput()">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>When clicar no menu Input</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded68.png' src='../embedded68.png'></div>
+									<div class="d-flex align-items-center justify-content-start and" title="InputSteps.clicarNoSpinner()">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>And clicar no nona Info</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded69.png' src='../embedded69.png'></div>
+									<div class="d-flex align-items-center justify-content-start and" title="SpinnerSteps.clicarNoSpinner(String)">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>And clicar no spinner Selection 3</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded70.png' src='../embedded70.png'></div>
+							</div>
+						</div>
+						<div class="card-body l1">
+							<div class="card-header" role="tab">
+								<div class="card-title outline-child">
+									<div class="node">Spinner</div>
+									<div class="status-avatar float-left pass-bg">
+										<i class="fa fa-check text-white"></i>
+									</div>
+										<div class="status-avatar float-right">
+											<i class="fa fa-paperclip"></i>
+										</div>
+								</div>
+							</div>
+							<div class="card-body collapse mt-3">
+									<div class="d-flex align-items-center justify-content-start when" title="MenuSteps.menuInput()">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>When clicar no menu Input</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded71.png' src='../embedded71.png'></div>
+									<div class="d-flex align-items-center justify-content-start and" title="InputSteps.clicarNoSpinner()">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>And clicar no nona Info</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded72.png' src='../embedded72.png'></div>
+									<div class="d-flex align-items-center justify-content-start and" title="SpinnerSteps.clicarNoSpinner(String)">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>And clicar no spinner Selection 4</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded73.png' src='../embedded73.png'></div>
+							</div>
+						</div>
+						<div class="card-body l1">
+							<div class="card-header" role="tab">
+								<div class="card-title outline-child">
+									<div class="node">Spinner</div>
+									<div class="status-avatar float-left pass-bg">
+										<i class="fa fa-check text-white"></i>
+									</div>
+										<div class="status-avatar float-right">
+											<i class="fa fa-paperclip"></i>
+										</div>
+								</div>
+							</div>
+							<div class="card-body collapse mt-3">
+									<div class="d-flex align-items-center justify-content-start when" title="MenuSteps.menuInput()">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>When clicar no menu Input</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded74.png' src='../embedded74.png'></div>
+									<div class="d-flex align-items-center justify-content-start and" title="InputSteps.clicarNoSpinner()">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>And clicar no nona Info</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded75.png' src='../embedded75.png'></div>
+									<div class="d-flex align-items-center justify-content-start and" title="SpinnerSteps.clicarNoSpinner(String)">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>And clicar no spinner Selection 5</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded76.png' src='../embedded76.png'></div>
+							</div>
+						</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Verificar Posicao Objeto</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+					<div class="status-avatar float-right mr-4">
+						<i class="fa fa-paperclip"></i>
+					</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start when" title="MenuSteps.menuInput()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When clicar no menu Input</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded77.png' src='../embedded77.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="InputSteps.clicarNo()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And clicar no decima Info</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded78.png' src='../embedded78.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="SolidSteps.clicarNoSpinner()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And swippe leve no objeto</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded79.png' src='../embedded79.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="SolidSteps.verificar()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And verificar a mudanca</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded80.png' src='../embedded80.png'></div>
+					</div>
+				</div>
+	</div>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="120"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Login</p>
+							<p class="duration text-sm">0h 0m 59s+442ms</p>
+							<span class="datetime">23:30:02 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Login</h5>
+									<span class='badge badge-success'>04.26.2022 23:30:02</span>
+									<span class='badge badge-danger'>04.26.2022 23:31:02</span>
+									<span class='badge badge-default'>0h 0m 59s+442ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+
+<div class="accordion mt-4">
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Login Admin</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+					<div class="status-avatar float-right mr-4">
+						<i class="fa fa-paperclip"></i>
+					</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start when" title="HomeSteps.clicarLateral()">
 								<span class="alert-icon pass-bg">
 									<i class="fa fa-check text-white"></i>
 								</span>
 								<span>When clicar no menu lateral</span>
 							</div>
 				<div class="details"></div>
-				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded1.png' src='../embedded1.png'></div>
-							<div class="d-flex align-items-center justify-content-start and" title="MenuSteps.xpto13()">
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded81.png' src='../embedded81.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="MenuSteps.menuLogin()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And clicar no menu Login</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded82.png' src='../embedded82.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="LoginSteps.fazerLogin()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And efetuar o login</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded83.png' src='../embedded83.png'></div>
+							<div class="d-flex align-items-center justify-content-start then" title="LoginSteps.verificarLogin()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then verificar Login Admin</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded84.png' src='../embedded84.png'></div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Login Invalido</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+					<div class="status-avatar float-right mr-4">
+						<i class="fa fa-paperclip"></i>
+					</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start when" title="HomeSteps.clicarLateral()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When clicar no menu lateral</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded85.png' src='../embedded85.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="MenuSteps.menuLogin()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And clicar no menu Login</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded86.png' src='../embedded86.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="LoginSteps.fazerLoginErrado()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And efetuar o login errado</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded87.png' src='../embedded87.png'></div>
+							<div class="d-flex align-items-center justify-content-start then" title="LoginSteps.verificarLoginErrado()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then verificar Login Errado</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded88.png' src='../embedded88.png'></div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Logout</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+					<div class="status-avatar float-right mr-4">
+						<i class="fa fa-paperclip"></i>
+					</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start when" title="HomeSteps.clicarLateral()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When clicar no menu lateral</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded89.png' src='../embedded89.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="MenuSteps.menuLogin()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And clicar no menu Login</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded90.png' src='../embedded90.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="LoginSteps.fazerLogin()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And efetuar o login</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded91.png' src='../embedded91.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="LoginSteps.clicarLogout()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And clicar Logout</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded92.png' src='../embedded92.png'></div>
+							<div class="d-flex align-items-center justify-content-start then" title="LoginSteps.verificarTelaPrincipal()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then verificar tela principal</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded93.png' src='../embedded93.png'></div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">TryButton</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+					<div class="status-avatar float-right mr-4">
+						<i class="fa fa-paperclip"></i>
+					</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start when" title="HomeSteps.clicarLateral()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When clicar no menu lateral</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded94.png' src='../embedded94.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="MenuSteps.menuLogin()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And clicar no menu Login</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded95.png' src='../embedded95.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="LoginSteps.fazerLoginErrado()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And efetuar o login errado</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded96.png' src='../embedded96.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="LoginSteps.clicarTryButton()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And clicar TryButton</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded97.png' src='../embedded97.png'></div>
+							<div class="d-flex align-items-center justify-content-start then" title="LoginSteps.verificarTelaPrincipal()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then verificar tela principal</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded98.png' src='../embedded98.png'></div>
+					</div>
+				</div>
+	</div>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="143"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Native</p>
+							<p class="duration text-sm">0h 1m 32s+452ms</p>
+							<span class="datetime">23:31:10 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Native</h5>
+									<span class='badge badge-success'>04.26.2022 23:31:10</span>
+									<span class='badge badge-danger'>04.26.2022 23:32:43</span>
+									<span class='badge badge-default'>0h 1m 32s+452ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+
+<div class="accordion mt-4">
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Galeria Existente</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+					<div class="status-avatar float-right mr-4">
+						<i class="fa fa-paperclip"></i>
+					</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start and" title="MenuSteps.menuNative()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And clicar no menu Native</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded99.png' src='../embedded99.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="ImageCollectionSteps.clicarEmImageGallery()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And clicar em ImageGallery</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded100.png' src='../embedded100.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="ImageCollectionSteps.verificarSeExisteGaleria()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And verificar se existe galeria</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded101.png' src='../embedded101.png'></div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Verificar ContentScrolling</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+					<div class="status-avatar float-right mr-4">
+						<i class="fa fa-paperclip"></i>
+					</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start and" title="MenuSteps.menuNative()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And clicar no menu Native</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded102.png' src='../embedded102.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="ScrollingViewSteps.clicarNoScrool()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And clicar no menu ContentScrolling</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded103.png' src='../embedded103.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="ScrollingViewSteps.verificarTextoAparece()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And verificar se esta na tela</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded104.png' src='../embedded104.png'></div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">TableOfElements</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+					<div class="status-avatar float-right mr-4">
+						<i class="fa fa-paperclip"></i>
+					</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start and" title="MenuSteps.menuNative()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And clicar no menu Native</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded105.png' src='../embedded105.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="TableOfElementsSteps.clicarEmImageGallery()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And clicar em TableOfElements</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded106.png' src='../embedded106.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="TableOfElementsSteps.scroolAte39()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And ir ate o Elemento 39</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded107.png' src='../embedded107.png'></div>
+							<div class="d-flex align-items-center justify-content-start then" title="TableOfElementsSteps.verificarTexto()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then verificar Texto 39</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded108.png' src='../embedded108.png'></div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">VideoPlayer</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+					<div class="status-avatar float-right mr-4">
+						<i class="fa fa-paperclip"></i>
+					</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start and" title="MenuSteps.menuNative()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And clicar no menu Native</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded109.png' src='../embedded109.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="VideoPlayerSteps.clicarNoVideoPlayer()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And clicar no menu VideoPlayer</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded110.png' src='../embedded110.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="VideoPlayerSteps.verificarSeVideoAparece()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And verificar se o video apareceu</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded111.png' src='../embedded111.png'></div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">ContentOutOfView</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+					<div class="status-avatar float-right mr-4">
+						<i class="fa fa-paperclip"></i>
+					</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start and" title="MenuSteps.menuNative()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And clicar no menu Native</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded112.png' src='../embedded112.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="OutOfViewSteps.clicarNoScrool()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And clicar no menu ContentOutOfView</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded113.png' src='../embedded113.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="OutOfViewSteps.verificarSeOTextoApareceu()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And verificar se o texto escondido aparece</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded114.png' src='../embedded114.png'></div>
+					</div>
+				</div>
+	</div>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="165"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">NestedViews</p>
+							<p class="duration text-sm">0h 1m 34s+74ms</p>
+							<span class="datetime">23:32:50 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">NestedViews</h5>
+									<span class='badge badge-success'>04.26.2022 23:32:50</span>
+									<span class='badge badge-danger'>04.26.2022 23:34:24</span>
+									<span class='badge badge-default'>0h 1m 34s+74ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+
+<div class="accordion mt-4">
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">FinalLevel</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+					<div class="status-avatar float-right mr-4">
+						<i class="fa fa-paperclip"></i>
+					</div>
+			</div>
+		</div>
+				<div class="collapse scenario_outline">
+						<div class="card-body l1">
+							<div class="card-header" role="tab">
+								<div class="card-title outline-child">
+									<div class="node">FinalLevel</div>
+									<div class="status-avatar float-left pass-bg">
+										<i class="fa fa-check text-white"></i>
+									</div>
+										<div class="status-avatar float-right">
+											<i class="fa fa-paperclip"></i>
+										</div>
+								</div>
+							</div>
+							<div class="card-body collapse mt-3">
+									<div class="d-flex align-items-center justify-content-start when" title="HomeSteps.clicarLateral()">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>When clicar no menu lateral</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded115.png' src='../embedded115.png'></div>
+									<div class="d-flex align-items-center justify-content-start and" title="MenuSteps.menuNestedViews()">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>And clicar no menu Nested Views</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded116.png' src='../embedded116.png'></div>
+									<div class="d-flex align-items-center justify-content-start and" title="NestedViewsSteps.clicarNoNextLevelBack(String)">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>And clicar no Next Level Back 4</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded117.png' src='../embedded117.png'></div>
+									<div class="d-flex align-items-center justify-content-start then" title="NestedViewsSteps.verificarTexto(String)">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>Then verificar Final Level This is the fourth view</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded118.png' src='../embedded118.png'></div>
+							</div>
+						</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">NextLevel</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+					<div class="status-avatar float-right mr-4">
+						<i class="fa fa-paperclip"></i>
+					</div>
+			</div>
+		</div>
+				<div class="collapse scenario_outline">
+						<div class="card-body l1">
+							<div class="card-header" role="tab">
+								<div class="card-title outline-child">
+									<div class="node">NextLevel</div>
+									<div class="status-avatar float-left pass-bg">
+										<i class="fa fa-check text-white"></i>
+									</div>
+										<div class="status-avatar float-right">
+											<i class="fa fa-paperclip"></i>
+										</div>
+								</div>
+							</div>
+							<div class="card-body collapse mt-3">
+									<div class="d-flex align-items-center justify-content-start when" title="HomeSteps.clicarLateral()">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>When clicar no menu lateral</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded119.png' src='../embedded119.png'></div>
+									<div class="d-flex align-items-center justify-content-start and" title="MenuSteps.menuNestedViews()">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>And clicar no menu Nested Views</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded120.png' src='../embedded120.png'></div>
+									<div class="d-flex align-items-center justify-content-start and" title="NestedViewsSteps.clicarNoNextLevelBack(String)">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>And clicar no Next Level Back 1</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded121.png' src='../embedded121.png'></div>
+									<div class="d-flex align-items-center justify-content-start then" title="NestedViewsSteps.verificarTexto(String)">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>Then verificar Final Level This is the first view</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded122.png' src='../embedded122.png'></div>
+							</div>
+						</div>
+						<div class="card-body l1">
+							<div class="card-header" role="tab">
+								<div class="card-title outline-child">
+									<div class="node">NextLevel</div>
+									<div class="status-avatar float-left pass-bg">
+										<i class="fa fa-check text-white"></i>
+									</div>
+										<div class="status-avatar float-right">
+											<i class="fa fa-paperclip"></i>
+										</div>
+								</div>
+							</div>
+							<div class="card-body collapse mt-3">
+									<div class="d-flex align-items-center justify-content-start when" title="HomeSteps.clicarLateral()">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>When clicar no menu lateral</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded123.png' src='../embedded123.png'></div>
+									<div class="d-flex align-items-center justify-content-start and" title="MenuSteps.menuNestedViews()">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>And clicar no menu Nested Views</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded124.png' src='../embedded124.png'></div>
+									<div class="d-flex align-items-center justify-content-start and" title="NestedViewsSteps.clicarNoNextLevelBack(String)">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>And clicar no Next Level Back 2</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded125.png' src='../embedded125.png'></div>
+									<div class="d-flex align-items-center justify-content-start then" title="NestedViewsSteps.verificarTexto(String)">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>Then verificar Final Level This is the second view</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded126.png' src='../embedded126.png'></div>
+							</div>
+						</div>
+						<div class="card-body l1">
+							<div class="card-header" role="tab">
+								<div class="card-title outline-child">
+									<div class="node">NextLevel</div>
+									<div class="status-avatar float-left pass-bg">
+										<i class="fa fa-check text-white"></i>
+									</div>
+										<div class="status-avatar float-right">
+											<i class="fa fa-paperclip"></i>
+										</div>
+								</div>
+							</div>
+							<div class="card-body collapse mt-3">
+									<div class="d-flex align-items-center justify-content-start when" title="HomeSteps.clicarLateral()">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>When clicar no menu lateral</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded127.png' src='../embedded127.png'></div>
+									<div class="d-flex align-items-center justify-content-start and" title="MenuSteps.menuNestedViews()">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>And clicar no menu Nested Views</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded128.png' src='../embedded128.png'></div>
+									<div class="d-flex align-items-center justify-content-start and" title="NestedViewsSteps.clicarNoNextLevelBack(String)">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>And clicar no Next Level Back 3</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded129.png' src='../embedded129.png'></div>
+									<div class="d-flex align-items-center justify-content-start then" title="NestedViewsSteps.verificarTexto(String)">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>Then verificar Final Level This is the third view</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded130.png' src='../embedded130.png'></div>
+							</div>
+						</div>
+						<div class="card-body l1">
+							<div class="card-header" role="tab">
+								<div class="card-title outline-child">
+									<div class="node">NextLevel</div>
+									<div class="status-avatar float-left pass-bg">
+										<i class="fa fa-check text-white"></i>
+									</div>
+										<div class="status-avatar float-right">
+											<i class="fa fa-paperclip"></i>
+										</div>
+								</div>
+							</div>
+							<div class="card-body collapse mt-3">
+									<div class="d-flex align-items-center justify-content-start when" title="HomeSteps.clicarLateral()">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>When clicar no menu lateral</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded131.png' src='../embedded131.png'></div>
+									<div class="d-flex align-items-center justify-content-start and" title="MenuSteps.menuNestedViews()">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>And clicar no menu Nested Views</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded132.png' src='../embedded132.png'></div>
+									<div class="d-flex align-items-center justify-content-start and" title="NestedViewsSteps.clicarNoNextLevelBack(String)">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>And clicar no Next Level Back 4</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded133.png' src='../embedded133.png'></div>
+									<div class="d-flex align-items-center justify-content-start then" title="NestedViewsSteps.verificarTexto(String)">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>Then verificar Final Level This is the fourth view</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded134.png' src='../embedded134.png'></div>
+							</div>
+						</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">More</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+					<div class="status-avatar float-right mr-4">
+						<i class="fa fa-paperclip"></i>
+					</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start when" title="HomeSteps.clicarLateral()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When clicar no menu lateral</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded135.png' src='../embedded135.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="MenuSteps.menuNestedViews()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And clicar no menu Nested Views</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded136.png' src='../embedded136.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="NestedViewsSteps.clicarNoMore()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And clicar no More</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded137.png' src='../embedded137.png'></div>
+							<div class="d-flex align-items-center justify-content-start then" title="NestedViewsSteps.verificarValor()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then verificar se voltou para inicial</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded138.png' src='../embedded138.png'></div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Back Navigation</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+					<div class="status-avatar float-right mr-4">
+						<i class="fa fa-paperclip"></i>
+					</div>
+			</div>
+		</div>
+				<div class="collapse scenario_outline">
+						<div class="card-body l1">
+							<div class="card-header" role="tab">
+								<div class="card-title outline-child">
+									<div class="node">Back Navigation</div>
+									<div class="status-avatar float-left pass-bg">
+										<i class="fa fa-check text-white"></i>
+									</div>
+										<div class="status-avatar float-right">
+											<i class="fa fa-paperclip"></i>
+										</div>
+								</div>
+							</div>
+							<div class="card-body collapse mt-3">
+									<div class="d-flex align-items-center justify-content-start when" title="HomeSteps.clicarLateral()">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>When clicar no menu lateral</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded139.png' src='../embedded139.png'></div>
+									<div class="d-flex align-items-center justify-content-start and" title="MenuSteps.menuNestedViews()">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>And clicar no menu Nested Views</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded140.png' src='../embedded140.png'></div>
+									<div class="d-flex align-items-center justify-content-start and" title="NestedViewsSteps.clicarNoNextLevelBack(String)">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>And clicar no Next Level Back 4</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded141.png' src='../embedded141.png'></div>
+									<div class="d-flex align-items-center justify-content-start and" title="NestedViewsSteps.clicarNoBack()">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>And clicar no Back Navigation</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded142.png' src='../embedded142.png'></div>
+									<div class="d-flex align-items-center justify-content-start then" title="NestedViewsSteps.verificarTexto(String)">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>Then verificar Final Level This is the third view</span>
+									</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded143.png' src='../embedded143.png'></div>
+							</div>
+						</div>
+				</div>
+	</div>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="205"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Web</p>
+							<p class="duration text-sm">0h 0m 14s+745ms</p>
+							<span class="datetime">23:34:32 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Web</h5>
+									<span class='badge badge-success'>04.26.2022 23:34:32</span>
+									<span class='badge badge-danger'>04.26.2022 23:34:47</span>
+									<span class='badge badge-default'>0h 0m 14s+745ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+
+<div class="accordion mt-4">
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Amazon</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+					<div class="status-avatar float-right mr-4">
+						<i class="fa fa-paperclip"></i>
+					</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start when" title="HomeSteps.clicarLateral()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When clicar no menu lateral</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded144.png' src='../embedded144.png'></div>
+							<div class="d-flex align-items-center justify-content-start and" title="MenuSteps.menuWeb()">
 								<span class="alert-icon pass-bg">
 									<i class="fa fa-check text-white"></i>
 								</span>
 								<span>And clicar no menu Web</span>
 							</div>
 				<div class="details"></div>
-				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded2.png' src='../embedded2.png'></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded145.png' src='../embedded145.png'></div>
 							<div class="d-flex align-items-center justify-content-start then" title="WebSteps.verificarLogin()">
 								<span class="alert-icon pass-bg">
 									<i class="fa fa-check text-white"></i>
@@ -201,7 +2465,7 @@
 								<span>Then verificar se esta na amazon</span>
 							</div>
 				<div class="details"></div>
-				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded3.png' src='../embedded3.png'></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded146.png' src='../embedded146.png'></div>
 					</div>
 				</div>
 	</div>
@@ -238,7 +2502,7 @@
 			<ul class="tools text-right">
 				<li>
 					<a href="#">
-					<span class="badge badge-primary">1</span>
+					<span class="badge badge-primary">2</span>
 					</a>
 				</li>
 			</ul>
@@ -249,10 +2513,10 @@
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">@app</p>
-							<p class="duration text-sm">1 tests</p>
+							<p class="duration text-sm">46 tests</p>
 							<span class="datetime">
-							<span class='badge badge-success'>1</span>
-							
+							<span class='badge badge-success'>39</span>
+							<span class='badge badge-danger'>7</span>
 							
 							
 							</span>
@@ -261,7 +2525,685 @@
 					<div class="test-contents d-none">
 						<div class="info">
 							<h4>@app</h4>
-							<span status="pass" class='badge badge-success'>1 passed</span>
+							<span status="pass" class='badge badge-success'>39 passed</span>
+							<span status="fail" class='badge badge-danger'>7 failed</span>
+							
+							
+						</div>
+						<table class='table table-sm mt-4'>
+							<thead>
+								<tr>
+									<th class="status-col">Status</th>
+									<th class="timestamp-col">Timestamp</th>
+									<th>TestName</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:18:40 PM</td>
+									<td class='linked' test-id='2'>
+										Testar Botao Alerta
+										<div class="">
+											<span class="badge badge-default">Alerts.Testar Botao Alerta</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:18:53 PM</td>
+									<td class='linked' test-id='7'>
+										Testar Modal
+										<div class="">
+											<span class="badge badge-default">Alerts.Testar Modal</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:19:06 PM</td>
+									<td class='linked' test-id='13'>
+										Verificar Botao Crash
+										<div class="">
+											<span class="badge badge-default">Crash.Verificar Botao Crash</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:19:16 PM</td>
+									<td class='linked' test-id='18'>
+										Acessa Home
+										<div class="">
+											<span class="badge badge-default">Home App.Acessa Home</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:19:25 PM</td>
+									<td class='linked' test-id='21'>
+										Acessar Home Texto Inválido
+										<div class="">
+											<span class="badge badge-default">Home App.Acessar Home Texto Inválido</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:19:34 PM</td>
+									<td class='linked' test-id='25'>
+										Verificar Se Acessou o Google
+										<div class="">
+											<span class="badge badge-default">Http.Verificar Se Acessou o Google</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:19:34 PM</td>
+									<td class='linked' test-id='26'>
+										Verificar Se Acessou o Google
+										<div class="">
+											<span class="badge badge-default">Http.Verificar Se Acessou o Google</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="fail">
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>23:19:59 PM</td>
+									<td class='linked' test-id='32'>
+										Texto
+										<div class="">
+											<span class="badge badge-default">Input.Texto</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="fail">
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>23:19:59 PM</td>
+									<td class='linked' test-id='33'>
+										Texto
+										<div class="">
+											<span class="badge badge-default">Input.Texto</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="fail">
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>23:20:11 PM</td>
+									<td class='linked' test-id='37'>
+										Texto
+										<div class="">
+											<span class="badge badge-default">Input.Texto</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="fail">
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>23:20:24 PM</td>
+									<td class='linked' test-id='41'>
+										Texto
+										<div class="">
+											<span class="badge badge-default">Input.Texto</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="fail">
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>23:20:37 PM</td>
+									<td class='linked' test-id='45'>
+										Texto
+										<div class="">
+											<span class="badge badge-default">Input.Texto</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="fail">
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>23:20:51 PM</td>
+									<td class='linked' test-id='49'>
+										Texto
+										<div class="">
+											<span class="badge badge-default">Input.Texto</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="fail">
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>23:21:04 PM</td>
+									<td class='linked' test-id='53'>
+										Texto
+										<div class="">
+											<span class="badge badge-default">Input.Texto</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:21:17 PM</td>
+									<td class='linked' test-id='57'>
+										Information
+										<div class="">
+											<span class="badge badge-default">Input.Information</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:21:32 PM</td>
+									<td class='linked' test-id='62'>
+										Add information
+										<div class="">
+											<span class="badge badge-default">Input.Add information</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:21:48 PM</td>
+									<td class='linked' test-id='68'>
+										DataPicker
+										<div class="">
+											<span class="badge badge-default">Input.DataPicker</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:22:28 PM</td>
+									<td class='linked' test-id='77'>
+										Label1
+										<div class="">
+											<span class="badge badge-default">Input.Label1</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:22:53 PM</td>
+									<td class='linked' test-id='81'>
+										Label2
+										<div class="">
+											<span class="badge badge-default">Input.Label2</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:23:17 PM</td>
+									<td class='linked' test-id='85'>
+										Verificar Quantidade de Label
+										<div class="">
+											<span class="badge badge-default">Input.Verificar Quantidade de Label</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:23:42 PM</td>
+									<td class='linked' test-id='89'>
+										Toogle
+										<div class="">
+											<span class="badge badge-default">Input.Toogle</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:24:18 PM</td>
+									<td class='linked' test-id='94'>
+										Spinner
+										<div class="">
+											<span class="badge badge-default">Input.Spinner</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:24:18 PM</td>
+									<td class='linked' test-id='95'>
+										Spinner
+										<div class="">
+											<span class="badge badge-default">Input.Spinner</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:25:10 PM</td>
+									<td class='linked' test-id='99'>
+										Spinner
+										<div class="">
+											<span class="badge badge-default">Input.Spinner</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:26:04 PM</td>
+									<td class='linked' test-id='103'>
+										Spinner
+										<div class="">
+											<span class="badge badge-default">Input.Spinner</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:27:00 PM</td>
+									<td class='linked' test-id='107'>
+										Spinner
+										<div class="">
+											<span class="badge badge-default">Input.Spinner</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:27:58 PM</td>
+									<td class='linked' test-id='111'>
+										Spinner
+										<div class="">
+											<span class="badge badge-default">Input.Spinner</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:29:01 PM</td>
+									<td class='linked' test-id='115'>
+										Verificar Posicao Objeto
+										<div class="">
+											<span class="badge badge-default">Input.Verificar Posicao Objeto</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:30:02 PM</td>
+									<td class='linked' test-id='121'>
+										Login Admin
+										<div class="">
+											<span class="badge badge-default">Login.Login Admin</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:30:19 PM</td>
+									<td class='linked' test-id='126'>
+										Login Invalido
+										<div class="">
+											<span class="badge badge-default">Login.Login Invalido</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:31:10 PM</td>
+									<td class='linked' test-id='144'>
+										Galeria Existente
+										<div class="">
+											<span class="badge badge-default">Native.Galeria Existente</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:31:24 PM</td>
+									<td class='linked' test-id='148'>
+										Verificar ContentScrolling
+										<div class="">
+											<span class="badge badge-default">Native.Verificar ContentScrolling</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:31:44 PM</td>
+									<td class='linked' test-id='152'>
+										TableOfElements
+										<div class="">
+											<span class="badge badge-default">Native.TableOfElements</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:32:17 PM</td>
+									<td class='linked' test-id='157'>
+										VideoPlayer
+										<div class="">
+											<span class="badge badge-default">Native.VideoPlayer</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:32:31 PM</td>
+									<td class='linked' test-id='161'>
+										ContentOutOfView
+										<div class="">
+											<span class="badge badge-default">Native.ContentOutOfView</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:32:50 PM</td>
+									<td class='linked' test-id='166'>
+										FinalLevel
+										<div class="">
+											<span class="badge badge-default">NestedViews.FinalLevel</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:32:50 PM</td>
+									<td class='linked' test-id='167'>
+										FinalLevel
+										<div class="">
+											<span class="badge badge-default">NestedViews.FinalLevel</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:33:07 PM</td>
+									<td class='linked' test-id='172'>
+										NextLevel
+										<div class="">
+											<span class="badge badge-default">NestedViews.NextLevel</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:33:07 PM</td>
+									<td class='linked' test-id='173'>
+										NextLevel
+										<div class="">
+											<span class="badge badge-default">NestedViews.NextLevel</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:33:20 PM</td>
+									<td class='linked' test-id='178'>
+										NextLevel
+										<div class="">
+											<span class="badge badge-default">NestedViews.NextLevel</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:33:32 PM</td>
+									<td class='linked' test-id='183'>
+										NextLevel
+										<div class="">
+											<span class="badge badge-default">NestedViews.NextLevel</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:33:46 PM</td>
+									<td class='linked' test-id='188'>
+										NextLevel
+										<div class="">
+											<span class="badge badge-default">NestedViews.NextLevel</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:34:02 PM</td>
+									<td class='linked' test-id='193'>
+										More
+										<div class="">
+											<span class="badge badge-default">NestedViews.More</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:34:15 PM</td>
+									<td class='linked' test-id='198'>
+										Back Navigation
+										<div class="">
+											<span class="badge badge-default">NestedViews.Back Navigation</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:34:15 PM</td>
+									<td class='linked' test-id='199'>
+										Back Navigation
+										<div class="">
+											<span class="badge badge-default">NestedViews.Back Navigation</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:34:32 PM</td>
+									<td class='linked' test-id='206'>
+										Amazon
+										<div class="">
+											<span class="badge badge-default">Web.Amazon</span>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</li>
+				<li class="test-item">
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">@naoRodarBrowserstack</p>
+							<p class="duration text-sm">2 tests</p>
+							<span class="datetime">
+							<span class='badge badge-success'>2</span>
+							
+							
+							
+							</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="info">
+							<h4>@naoRodarBrowserstack</h4>
+							<span status="pass" class='badge badge-success'>2 passed</span>
 							
 							
 							
@@ -281,11 +3223,170 @@
 											<i class="fa fa-check text-white"></i>
 										</div>
 									</td>
-									<td>01:53:06 AM</td>
-									<td class='linked' test-id='2'>
-										Acessar Home Texto Inválido
+									<td>23:30:34 PM</td>
+									<td class='linked' test-id='131'>
+										Logout
 										<div class="">
-											<span class="badge badge-default">Home App.Acessar Home Texto Inválido</span>
+											<span class="badge badge-default">Login.Logout</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>23:30:51 PM</td>
+									<td class='linked' test-id='137'>
+										TryButton
+										<div class="">
+											<span class="badge badge-default">Login.TryButton</span>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="test-content scrollable">
+		<div class="test-content-tools">
+			<ul>
+				<li>
+					<a class="back-to-test" href="javascript:void(0)">
+					<i class="fa fa-arrow-left"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="test-content-detail">
+			<div class="detail-body"></div>
+		</div>
+	</div>
+</div><div class="test-wrapper row exception-view attributes-view">
+	<div class="test-list">
+		<div class="test-list-tools">
+			<ul class="tools pull-left">
+				<li>
+					<a href="">
+					<span class="font-size-14">Exception</span>
+					</a>
+				</li>
+			</ul>
+			<ul class="tools text-right">
+				<li>
+					<a href="#">
+					<span class="badge badge-primary">1</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="test-list-wrapper scrollable">
+			<ul class="test-list-item">
+				<li class="test-item">
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">java.lang.AssertionError</p>
+							<p class="duration text-sm">6 tests</p>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="info">
+							<h4>java.lang.AssertionError</h4>
+						</div>
+						<table class='table table-sm mt-4'>
+							<thead>
+								<tr>
+									<th class="status-col">Status</th>
+									<th class="timestamp-col">Timestamp</th>
+									<th>TestName</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>23:20:03 PM</td>
+									<td class='linked' test-id='36'>
+										Then verificar se o texto esta escrito Texto 2
+										<div class="">
+											<span class="badge badge-default">Texto</span>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>23:20:15 PM</td>
+									<td class='linked' test-id='40'>
+										Then verificar se o texto esta escrito Texto 3
+										<div class="">
+											<span class="badge badge-default">Texto</span>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>23:20:29 PM</td>
+									<td class='linked' test-id='44'>
+										Then verificar se o texto esta escrito Texto 4
+										<div class="">
+											<span class="badge badge-default">Texto</span>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>23:20:42 PM</td>
+									<td class='linked' test-id='48'>
+										Then verificar se o texto esta escrito Texto 5
+										<div class="">
+											<span class="badge badge-default">Texto</span>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>23:20:56 PM</td>
+									<td class='linked' test-id='52'>
+										Then verificar se o texto esta escrito Texto 6
+										<div class="">
+											<span class="badge badge-default">Texto</span>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>23:21:09 PM</td>
+									<td class='linked' test-id='56'>
+										Then verificar se o texto esta escrito Texto 7
+										<div class="">
+											<span class="badge badge-default">Texto</span>
 										</div>
 									</td>
 								</tr>
@@ -324,12 +3425,12 @@
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='100%'>
-						<b>1</b> features passed
+					<div><small data-tooltip='88,889%'>
+						<b>8</b> features passed
 						</small>
 					</div>
 					<div>
-						<small data-tooltip='0%'><b>0</b> features failed, 
+						<small data-tooltip='11,111%'><b>1</b> features failed, 
 						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
@@ -347,9 +3448,9 @@
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
+					<div><small data-tooltip='85,714%'><b>36</b> scenarios passed</small></div>
 					<div>
-						<small data-tooltip='0%'><b>0</b> scenarios failed, 
+						<small data-tooltip='14,286%'><b>6</b> scenarios failed, 
 						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
@@ -367,9 +3468,9 @@
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='100%'><b>3</b> steps passed</small></div>
+					<div><small data-tooltip='96,053%'><b>146</b> steps passed</small></div>
 					<div>
-						<small data-tooltip='0%'><b>0</b> steps failed, 
+						<small data-tooltip='3,947%'><b>6</b> steps failed, 
 						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
@@ -384,10 +3485,10 @@
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Features</h6>
-							<h2 class="font-size-28 font-weight-light mt-3">1</h2>
+							<h2 class="font-size-28 font-weight-light mt-3">9</h2>
 							<span class="text-semibold text-success font-size-15">
 							<i class="ti-arrow-up font-size-11"></i> 
-							<span>100,00%</span>
+							<span>88,89%</span>
 							</span>
 						</div>
 						<div class="align-self-end">
@@ -403,10 +3504,10 @@
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Scenarios</h6>
-							<h2 class="font-size-28 font-weight-light mt-3">1</h2>
+							<h2 class="font-size-28 font-weight-light mt-3">42</h2>
 							<span class="text-semibold text-success font-size-15">
 							<i class="ti-arrow-up font-size-11"></i> 
-							<span>100,00%</span>
+							<span>85,71%</span>
 							</span>
 						</div>
 						<div class="align-self-end">
@@ -422,7 +3523,7 @@
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Start</h6>
-							<h4 class="font-weight-light mt-4">abr 06, 2022 01:52:59</h4>
+							<h4 class="font-weight-light mt-4">abr 26, 2022 23:18:33</h4>
 							<span class="text-semibold text-success font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -438,7 +3539,7 @@
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Duration</h6>
-							<h4 class="font-weight-light mt-4">0h 0m 21s+441ms</h4>
+							<h4 class="font-weight-light mt-4">0h 16m 15s+318ms</h4>
 							<span class="text-semibold font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -483,7 +3584,16 @@
 						<tbody>
 							<tr>
 								<td>@app</td>
-								<td>1</td>
+								<td>39</td>
+								<td>7</td>
+								<td>0</td>
+								<td>
+									84,783%
+								</td>
+							</tr>
+							<tr>
+								<td>@naoRodarBrowserstack</td>
+								<td>2</td>
 								<td>0</td>
 								<td>0</td>
 								<td>
@@ -499,49 +3609,49 @@
 </div>
 <script>
 	var statusGroup = {
-	    parentCount: 1,
-		passParent: 1,
-		failParent: 0,
+	    parentCount: 9,
+		passParent: 8,
+		failParent: 1,
 		fatalParent: 0,
 		errorParent: 0,
 		warningParent: 0,
 		skipParent: 0,
-		exceptionsParent: 0,
-		childCount: 1,
-		passChild: 1,
-		failChild: 0,
+		exceptionsParent: 1,
+		childCount: 42,
+		passChild: 36,
+		failChild: 6,
 		fatalChild: 0,
 		errorChild: 0,
 		warningChild: 0,
 		skipChild: 0,
 		infoChild: 0,
 		debugChild: 0,
-		exceptionsChild: 0,
-		grandChildCount: 3,
-		passGrandChild: 3,
-		failGrandChild: 0,
+		exceptionsChild: 6,
+		grandChildCount: 152,
+		passGrandChild: 146,
+		failGrandChild: 6,
 		fatalGrandChild: 0,
 		errorGrandChild: 0,
 		warningGrandChild: 0,
 		skipGrandChild: 0,
 		infoGrandChild: 0,
 		debugGrandChild: 0,
-		exceptionsGrandChild: 0,
-		eventsCount: 3,
+		exceptionsGrandChild: 6,
+		eventsCount: 152,
 		passEvents: 0,
-		failEvents: 0,
+		failEvents: 6,
 		fatalEvents: 0,
 		errorEvents: 0,
 		warningEvents: 0,
 		skipEvents: 0,
-		infoEvents: 3,
+		infoEvents: 146,
 		debugEvents: 0,
 		exceptionsEvents: 0
 	};
 </script>
 <script>
 	var timeline = {
-	        "Home App":12.969
+	        "Alerts":19.398,"Crash":3.481,"Home App":10.718,"Http":17.219,"Input":596.087,"Login":59.442,"Native":92.452,"NestedViews":94.074,"Web":14.745
 	};
 </script>
                 </div>

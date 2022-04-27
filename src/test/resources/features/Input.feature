@@ -1,7 +1,7 @@
-Feature: Home App
+Feature: Input
   @app
-  Scenario Outline: Acessa Home
-    And clicar no menu Input
+  Scenario Outline: Texto
+    When clicar no menu Input
     And escrever Texto <texto>
     Then verificar se o texto esta escrito <texto>
     Examples:
@@ -13,23 +13,23 @@ Feature: Home App
       |Texto 6|
       |Texto 7|
   @app
-  Scenario: Acessa Home
-    And clicar no menu Input
+  Scenario: Information
+    When clicar no menu Input
     And clicar no segundo Info
     And clicar no moreInfo
     Then verificar se o information
 
   @app
-  Scenario: Acessa Home
-    And clicar no menu Input
+  Scenario: Add information
+    When clicar no menu Input
     And clicar no segundo Info
     And clicar no moreInfo
     And clicar no information
     Then verificar se o add foi clicado
 
-  @app
-  Scenario: Acessa Home
-    And clicar no menu Input
+  @naoRodarBrowserstack
+  Scenario: DataPicker
+    When clicar no menu Input
     And clicar no terceiro Info
     And procurar no DataPicker
     And trocar o Picker
@@ -39,33 +39,33 @@ Feature: Home App
     Then verificar a data
 
   @app
-  Scenario: Acessa Home
-    And clicar no menu Input
+  Scenario: Label1
+    When clicar no menu Input
     And clicar no quarta Info
     Then verificar Label 1
 
   @app
-  Scenario: Acessa Home
-    And clicar no menu Input
+  Scenario: Label2
+    When clicar no menu Input
     And clicar no quarta Info
     Then verificar Label 2
 
   @app
-  Scenario: Acessa Home
-    And clicar no menu Input
+  Scenario: Verificar Quantidade de Label
+    When clicar no menu Input
     And clicar no quarta Info
     Then verificar quantidade de label
 
   @app
-  Scenario: Acessa Home
-    And clicar no menu Input
+  Scenario: Toogle
+   When clicar no menu Input
     And clicar no sexta Info
     And clicar no toggle
     Then verificar se toggle foi clicado
 
   @app
-  Scenario Outline: Acessa Home
-    And clicar no menu Input
+  Scenario Outline: Spinner
+    When clicar no menu Input
     And clicar no nona Info
     And clicar no spinner <spinner>
 
@@ -77,9 +77,10 @@ Feature: Home App
       |Selection 4|
       |Selection 5|
 
-  @app
- Scenario: Acessa Home
-    And clicar no menu Input
+
+  @naoRodarBrowserstack
+  Scenario: Verificar Posicao Objeto
+    When clicar no menu Input
     And clicar no decima Info
     And swippe leve no objeto
     And verificar a mudanca

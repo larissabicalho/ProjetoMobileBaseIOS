@@ -1,7 +1,7 @@
-Feature: Acessar app
+Feature: Http
   @app
   Scenario Outline: Verificar Se Acessou o Google
-    And clicar no menu HTTP
+    When clicar no menu HTTP
     And entrar no site
     And selecionar o site <web>
     Then valido o site

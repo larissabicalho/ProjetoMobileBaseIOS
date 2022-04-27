@@ -1,7 +1,7 @@
-Feature: Home App
+Feature: Web
 
   @app
-  Scenario: Acessar Home Texto Inválido
+  Scenario: Amazon
     When clicar no menu lateral
     And clicar no menu Web
     Then verificar se esta na amazon

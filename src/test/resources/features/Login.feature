@@ -1,30 +1,30 @@
-Feature: Home App
+Feature: Login
 
   @app
-  Scenario: Acessa Home
+  Scenario: Login Admin
     When clicar no menu lateral
     And clicar no menu Login
     And efetuar o login
     Then verificar Login Admin
 
   @app
-  Scenario: Acessa Home
+  Scenario: Login Invalido
     When clicar no menu lateral
     And clicar no menu Login
     And efetuar o login errado
     Then verificar Login Errado
 
 
-  @app
-  Scenario: Acessa Home
+  @naoRodarBrowserstack
+  Scenario: Logout
     When clicar no menu lateral
     And clicar no menu Login
     And efetuar o login
     And clicar Logout
     Then verificar tela principal
 
-  @app
-  Scenario: Acessa Home
+  @naoRodarBrowserstack
+  Scenario: TryButton
     When clicar no menu lateral
     And clicar no menu Login
     And efetuar o login errado
