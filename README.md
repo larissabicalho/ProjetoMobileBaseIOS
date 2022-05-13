@@ -9,11 +9,10 @@ O sistema alvo é o <b>AWS DEVICE FARM</b>
 
 |Component |
 |----------|
-|Alerts: [Toasts](http://developer.android.com/guide/topics/ui/notifiers/toasts.html) and [Dialogs](http://developer.android.com/guide/topics/ui/dialogs.html)|
+|Alerts|
 |Crash|
-|Fixtures|
+|Http|
 |Inputs|
-|Local Web View|
 |Login Page|
 |Native|
 |Nested View|
