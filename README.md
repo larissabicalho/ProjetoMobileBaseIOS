@@ -21,10 +21,12 @@ O sistema alvo é o <b>AWS DEVICE FARM</b>
 ## Examples for Native Features
 |Feature |
 |--------|
-|[Camera](http://developer.android.com/guide/topics/media/camera.html)  |
-|[Image Collection Grid](http://developer.android.com/guide/topics/ui/layout/gridview.html)|
-|[Scroll View](http://developer.android.com/reference/android/widget/ScrollView.html)|
-|[Video](http://developer.android.com/reference/android/media/MediaPlayer.html)|
+|Galeria|
+|Image Collection Grid|
+|Scroll View|
+|Video|
+|Table Of Elements|
+|OutOfView|
 
 ## Examples for Inputs
 |Component |
