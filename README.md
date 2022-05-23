@@ -18,42 +18,41 @@ O sistema alvo é o <b>AWS DEVICE FARM</b>
 |Nested View|
 |Web View|
 
-## Examples for Native Features
+## Examples of Native Features
 |Feature |
 |--------|
-|Galeria|
-|Image Collection Grid|
-|Scroll View|
-|Video|
-|Table Of Elements|
-|OutOfView|
+|[Camera](https://developer.apple.com/library/ios/documentation/AudioVideo/Conceptual/CameraAndPhotoLib_TopicsForIOS/Introduction/Introduction.html)|
+|[Image Gallery](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UICollectionView_class/)|
+|[Scroll View](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIScrollView_Class/)|
+|Out of View Content|
+|[Video](https://developer.apple.com/library/ios/documentation/MediaPlayer/Reference/MediaPlayer_Framework/)|
+|[Table of Elements](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UITableView_Class/)|
 
-## Examples for Inputs
+## Examples of Inputs
 |Component |
-|----------|
-|[Checkbox](http://developer.android.com/reference/android/widget/CheckBox.html)|
-|[DatePicker](http://developer.android.com/reference/android/widget/DatePicker.html)|
-|[EditText](http://developer.android.com/reference/android/widget/EditText.html)|
-|[Gestures Input](http://developer.android.com/training/gestures/index.html)|
-|[Pull to Refresh](https://developer.android.com/reference/android/support/v4/widget/SwipeRefreshLayout.html)|
-|[Radio Buttons](http://developer.android.com/guide/topics/ui/controls/radiobutton.html)|
-|[TimePicker](http://developer.android.com/reference/android/widget/TimePicker.html)|
-|[Toggle Button](http://developer.android.com/guide/topics/ui/controls/togglebutton.html)|
-|[Spinner Input](http://developer.android.com/guide/topics/ui/controls/spinner.html)|
-|[Buttons](http://developer.android.com/reference/android/widget/Button.html)|
+|--------------|
+|[DatePicker](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIDatePicker_Class/)|
+|[ContactAddButton](https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/UIKitUICatalog/UIButton.html)|
+|[TextView](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UITextView_Class/)|
+|[Labels](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UILabel_Class/)|
+|[Text Input](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UITextField_Class/)|
+|[Gestures Input](https://developer.apple.com/library/ios/documentation/EventHandling/Conceptual/EventHandlingiPhoneOS/GestureRecognizer_basics/GestureRecognizer_basics.html)|
+|[Refresh Control](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIRefreshControl_class/)|
+|[Button](https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/UIKitUICatalog/UIButton.html)|
+|[Data Picker](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIPickerView_Class/)|
+|[Switch View](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UISwitch_Class/index.html)|
 
-## Examples for Navigation
-|Component|
-|----------|
-|[Navigation Drawer](https://developer.android.com/training/implementing-navigation/nav-drawer.html)|
-|[ViewPager](http://developer.android.com/reference/android/support/v4/view/ViewPager.html)| </br>
+## Examples of Navigation
+|Component |
+|--------------|
+|[Tab Bar](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UITabBarController_Class/)|
+|[Page Viewer](https://developer.apple.com/library/prerelease/ios//documentation/UIKit/Reference/UIPageViewControllerClassReferenceClassRef/index.html)| </br>
 
 
 👉 Criação de Testes Data Driven Utilizando BDD
 <ul>
-  <li><b>Feature Input</b> (Text Field,  Radio, Spinner, Time Picker) </a></li>
-  <li><b>Feature Local Web View</b> (Preencher Nome e LastName) </a></li>
-  <li><b>Nested View</b> (Quantidade de Levels) </a></li>
+  <li><b>Feature Input</b> (Text Field e Spinner) </li>
+  <li><b>Nested View</b> (Quantidade de Levels)   </li>
 </ul>
 
 👉 Execução Parelela de Testes no BrowserStack </br>
@@ -82,33 +81,17 @@ O sistema alvo é o <b>AWS DEVICE FARM</b>
    ```
       npm install -g appium  
    ```
-  <li><b><a href="https://developer.android.com/studio?gclid=CjwKCAjw9qiTBhBbEiwApGE0VYny4bpmDm4qTUgZlJBSEzAoo9dWUIGS72_47baqLRJRIwqOfrU2RoC2m8QAvD_BwE&gclsrc=aw.ds"> Android Studio </a> </b></a></li>
- 
- <li><b> Instalar SDK </b></a></li>
+  <li><b><a href="https://developer.apple.com/xcode/"> XCode</b></a></li>
 </ul>
 
- ## SDK Via Android Studio
- 
-<ul>
-  <li> Ao abrir o Android Studio pela primeira vez, será aberta a janela para um novo projeto do Android Studio. Clique no botão SDK Manager (Gerenciador do SDK) </li>
-</ul>
- 
- <p align="center">
-   <img src="https://user-images.githubusercontent.com/22267601/165809447-cf3b6089-7b30-4a28-b024-553f3a6b01fe.jpg" width=100% height=40% >
-</p>
- 
- 
- <ul>
-    <li> Aparecerá a janela do SDK Manager, onde você pode selecionar os pacotes de plataformas que você quer baixar. </li>
-  <ul> <br>
- 
-  <p align="center">
-     <img src="https://user-images.githubusercontent.com/22267601/165810278-abbd20c7-5295-4927-85c6-f122bea45a80.jpg" width=100% height=40% >
-  </p>  
-  <br>
-<ul>
-  <li> Aperte “OK” e o Android SDK estará instalado e configurado. </li>
-</ul>
+ ## Configurações
+
+  1. Instalar o Homebrew - Instalar o HomeBrew:
+  
+```
+   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+```
  
  ##	Instalar  Appium	Doctor ##
  <ul>
