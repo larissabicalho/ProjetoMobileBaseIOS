@@ -92,7 +92,30 @@ O sistema alvo é o <b>AWS DEVICE FARM</b>
    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 ```
- 
+  
+ 2.  Instalar a dependência libimobiledevice executando o comando <b> brew install libimobiledevice </b> no terminal.
+ 3.  Para implantar  aplicativos nos dispositivos usa-se ios-deploy. Instalar com o comando <b> brew install ios-deploy </b>.
+ 4. <b>WebDriverAgent</b> para configurá-lo devemos fazer o seguinte passo:
+   ```
+      cd /usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/ 
+   ```
+  5. <b> open </b> </br>
+  ![2022_05_24_23_11_12_iOS_Testing_Using_Appium_and_JAVA_iOS_Mobile_Test_Automation](https://user-images.githubusercontent.com/22267601/170164930-f57d8ea2-a9fd-497d-b4c6-66a65256efe1.png)
+
+  6. Baixar o <b>WebDriverAgent</b> https://github.com/facebook/WebDriverAgent e abrir 
+  7. Copiar o conteúdo para pasta abaixo:
+  ![2022_05_24_23_15_58_iOS_Testing_Using_Appium_and_JAVA_iOS_Mobile_Test_Automation](https://user-images.githubusercontent.com/22267601/170165201-6159afbb-2ccc-4229-9cdf-2ac03c7418b8.png)
+ 8. Não fechando o caminho anterior digitar o seguinte comando:
+  ```
+        cd WebDriverAgent
+        mkdir -p Resources/WebDriverAgent.bundle
+        ./Scripts/bootstrap.sh  
+   ```
+ 9. Por final finalize instalando o pacote abaixo:
+   ```
+        brew install carthage 
+   ```
+  
  ##	Instalar  Appium	Doctor ##
  <ul>
     <li><b> Abra um terminal  </b></li> 
@@ -105,45 +128,6 @@ O sistema alvo é o <b>AWS DEVICE FARM</b>
        npm install -g appium-doctor  
    ```
 
-## Configurações de variáveis de ambiente ##
-
-Após a instalação dos itens anteriores, é necessário configurar as variáveis de ambiente, para isso: <br>
-  <ul>
-    <li>Acesse o menu INICIAR do Windows</li>
-    <li>Pesquise por "editar as variáveis de ambiente do sistema" </li>
-    <li> Clique em Variáveis de Ambiente </li>
-    <li> Na tabela Variáveis do sistema clique em Novo </li>
-    <li> Inclua as seguintes variáveis:</li>
-    <li>  Abra um terminal </li> <br>
-    <i>Execute o comando: <i> 
-    
-  ```
-     JAVA_HOME - C:\Program Files (x86)\Java\SEU_JDK
-     ANDROID_HOME - C:\Users\NOMEUSUARIO\AppData\Local\Android\Sdk
-     ANDROID_SDK_ROOT - C:\Users\NOMEUSUARIO\AppData\Local\Android\Sdk
-  ```
-   <p align="center">
-    <img src="https://user-images.githubusercontent.com/22267601/165965711-0f79080b-fa72-4be4-9af2-68616a7d4333.png" width=50% height=40% >
-   </p>
-  
-  <li>Na variável já existente PATH, inclua os demais valores:</li> <br>
-      
-
-
-```
-     %ANDROID_HOME%\platforms
-     %JAVA_HOME%\bin
-     %ANDROID_HOME%\tools
-     %ANDROID_HOME%\platform-tools
-  	 %ANDROID_HOME%\tools\bin
-     %ANDROID_HOME%\emulator
-
-```
-  
-  <p align="center">
-        <img src="https://user-images.githubusercontent.com/22267601/165815116-7f84b57a-f0cd-403f-a704-11ef861bd249.png" width=50% height=40% >
-   </p>
-</ul>
 
 <b> Como saber se está tudo funcionando? </b>
 
@@ -154,7 +138,7 @@ Para realizar um diagnóstico se está tudo configurado corretamente vamos usar 
     <i>Execute o comando: <i> 
     
   ```
-    appium-doctor --android
+    appium-doctor --ios
   ```
 
 <b> E caso a análise de dependência retorne algum erro, o item ficará com o símbolo em vermelho e uma sugestão para resolver o problema será apresentada. </b>
@@ -163,47 +147,7 @@ Para realizar um diagnóstico se está tudo configurado corretamente vamos usar 
         <img src="https://user-images.githubusercontent.com/22267601/165968299-bc10fb27-8b80-4cfb-b51d-092ffaca01d5.png" width=100% height=40% >
    </p>
 
-![deviceReal](https://user-images.githubusercontent.com/22267601/165816174-f0e6c7fa-b4c0-43a4-a00a-57c159be360b.png)
-      </br>
-      <b> Para executar o teste em um device real é necessário alguns passos </b> </br>
- 
- #### Habilitar o Modo Desenvolvedor  ####
-      
-   1. Abra o menu de "Configurações" do seu celular, role a aba até o final e clique em "Sobre o telefone". <br>
-   
-       <p align="center">
-        <img src="https://user-images.githubusercontent.com/22267601/165866592-42d597ae-141d-48ca-9868-55d5b65ce6fe.png" width=50% height=40% >
-      </p>
-  
-   2. Role a aba seguinte até o final e clique várias vezes sobre o item "Número da versão" até que a mensagem "Você agora é um desenvolvedor" seja exibida.
-  
-        <p align="center">
-        <img src="https://user-images.githubusercontent.com/22267601/165867039-b0aa71c2-b06c-4f31-894b-ac263aab7fdd.png" width=50% height=40% >
-      </p>
-
-   3. Acessando a aba "Sistema", é possível encontrar o item "Opções do desenvolvedor".
-      
-        <p align="center">
-         <img src="https://user-images.githubusercontent.com/22267601/165867124-f68590c6-5513-45d7-955d-3d019681af15.jpeg" width=50% height=40% >
-        </p>
-      
-  #### Habilitar Depuração USB  ####
-  
-   1. Já com o modo desenvolvedor ativado, acesse as configurações do sistema e toque em "Programador"
-      <p align="center">
-         <img src="https://user-images.githubusercontent.com/22267601/165867540-6918ae9e-8922-4cd1-8418-9b0bc598e575.png" width=50% height=40% >
-        </p>
-   2. Role a tela até a seção "Depuração" e habilite a opção "Depuração USB". Em seguida, toque em "OK" para confirmar
-        <p align="center">
-         <img src="https://user-images.githubusercontent.com/22267601/165867654-b45ef533-d13c-44a2-9161-e7b38255b18a.png" width=50% height=40% >
-      </p>
- 
- 
-       <p align="center">
-         <img src="https://user-images.githubusercontent.com/22267601/165867747-0b8c9aff-7af0-4246-87ca-4b08273ac3b9.png" width=50% height=40% >
-      </p>
-  
-![emulador](https://user-images.githubusercontent.com/22267601/165867968-6489c6da-6003-4241-a8da-3ba63d717e68.png)
+      ### essa parte falar do xcode
       
 #### Executar os testes com Emulador ####
 
@@ -284,37 +228,18 @@ Para realizar um diagnóstico se está tudo configurado corretamente vamos usar 
          <img src="https://user-images.githubusercontent.com/22267601/167215306-ff13ac6c-3460-400e-a945-b6aa0f2fb9d8.jpg" width=50% height=40% >
       </p>
       
-  Bluetooth - Ligar para que possar ser mostrado como true na Feature Fixtures
-      <p align="center">
-         <img src="https://user-images.githubusercontent.com/22267601/167215572-81801191-6e73-4999-bfd5-0879bc474c63.jpg" width=50% height=40%>
-      </p>
   
   Data Driven - Exemplo de Data Driven utilizando BDD     
       <p align="center">
          <img src="https://user-images.githubusercontent.com/22267601/167215976-efcef390-2ab8-48fb-a9d9-8c323f5a19d1.jpg" width=50% height=40% >
       </p>
-  Screen Toast 
-      <p align="center">
-         <img src="https://user-images.githubusercontent.com/22267601/167216200-80400e6d-8f08-4456-8327-40dedf908699.jpg" width=100% height=40% >
-      </p>
-   Verificar o Toast
-      <p align="center">
-         <img src="https://user-images.githubusercontent.com/22267601/167216473-bfd00896-e701-42fc-be0d-644ed6bedf94.png" width=40% height=20% >
-      </p>
-  ps : Foi necessário clicar 2 vezes no Submitted <br>
-       <p align="center">
-         <img src="https://user-images.githubusercontent.com/22267601/167216700-5928c334-fb95-48ad-8720-cff6a9861cde.jpg" width=100% height=40% >
-      </p>
+ 
    Screen de uma tela
        <p align="center">
          <img src="https://user-images.githubusercontent.com/22267601/167216986-72843378-6e63-4ca9-9a87-3b32061b3682.png" width=40% height=20% >
       </p>
       
    Configurações para rodar Device Real, Emulador e Browserstack <br>     
-    - É necessário para rodar no Device Real os caso de teste Bluetooth roda apenas no deviceReal
-      <p align="center">
-         <img src="https://user-images.githubusercontent.com/22267601/167217637-c4f46561-1067-48c4-a1d5-f1799feda041.jpg" width=100% height=60% >
-      </p>
      - É necessário para rodar no Browserstack retirar o teste de Input de Double Click
        <p align="center">
          <img src="https://user-images.githubusercontent.com/22267601/167217906-09ece542-7b2e-4517-929e-ef1dc74443e8.jpg" width=100% height=40% >
@@ -324,11 +249,6 @@ Para realizar um diagnóstico se está tudo configurado corretamente vamos usar 
          <img src="https://user-images.githubusercontent.com/22267601/167218048-fda20b9c-6f73-4c87-96b5-4b119bf34ba3.jpg" width=100% height=40% >
       </p>
 ![executarescritas](https://user-images.githubusercontent.com/22267601/167218496-73bc6ee8-f546-448e-bb95-dd7c80179d13.png)
-## Device Real ##
-- Achar deviceName 
-      <p align="center">
-         <img src="https://user-images.githubusercontent.com/22267601/167219525-6da88cb4-d21a-4155-a3a3-ed4c04f6d784.jpg" width=100% height=40% >
-      </p>
 ## Achar os packages ## 
 - Exemplo o PlayStore
        <p align="center">
