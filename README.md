@@ -236,7 +236,7 @@ Para realizar um diagnóstico se está tudo configurado corretamente vamos usar 
  
    Screen de uma tela
        <p align="center">
-         <img src="https://user-images.githubusercontent.com/22267601/167216986-72843378-6e63-4ca9-9a87-3b32061b3682.png" width=40% height=20% >
+         <img src="https://user-images.githubusercontent.com/22267601/170394717-5da21318-8c72-47fe-b3d9-bad24bbb1819.png" width=40% height=20% >
       </p>
       ##ajustar
    Configurações Emulador e Browserstack <br>     
