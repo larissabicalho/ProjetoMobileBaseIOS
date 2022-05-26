@@ -249,19 +249,6 @@ Para realizar um diagnóstico se está tudo configurado corretamente vamos usar 
          <img src="https://user-images.githubusercontent.com/22267601/167218048-fda20b9c-6f73-4c87-96b5-4b119bf34ba3.jpg" width=100% height=40% >
       </p>
 ![executarescritas](https://user-images.githubusercontent.com/22267601/167218496-73bc6ee8-f546-448e-bb95-dd7c80179d13.png)
-## Achar os packages ## 
-- Exemplo o PlayStore
-       <p align="center">
-         <img src="https://user-images.githubusercontent.com/22267601/167219634-04d625ee-4648-485f-b76c-559a3f6c6704.jpg" width=100% height=40% >
-      </p>
-- Abrir o Shell do Device
-        <p align="center">
-         <img src="https://user-images.githubusercontent.com/22267601/167219885-83187b24-fd82-4b46-a100-8ae819ec22ed.jpg" width=100% height=40% >
-      </p>
-- Abrir o Aplicativo no device no qual quer o appActivity e o Package e após digitar o seguinte comando:
-        <p align="center">
-         <img src="https://user-images.githubusercontent.com/22267601/167220296-4bed3f31-b420-4850-97d2-c45b9bb06d7e.png" width=100% height=40% >
-      </p>
 ## Configuração no Intellij para rodar o Device ##
 - No global parameters e necessário ajustar as seguintes variáveis:
         <p align="center">
