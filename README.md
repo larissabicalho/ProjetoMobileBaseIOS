@@ -147,8 +147,8 @@ Para realizar um diagnóstico se está tudo configurado corretamente vamos usar 
         <img src="https://user-images.githubusercontent.com/22267601/170547656-574f77f8-6a17-46d0-a289-456aa0498c57.png" width=100% height=40% >
    </p>
 
-      ### essa parte falar do xcode
-      
+ ![xcode](https://user-images.githubusercontent.com/22267601/170549023-ee4c2c3f-c5aa-4a70-a83f-449887168e24.png)
+   
 #### Executar os testes com Emulador ####
 
 1. Utilizando o prompt do Windows vá até a pasta onde se encontra o sdk é encontre o emulador é digite o seguinte comando conforme a imagem: </br>
