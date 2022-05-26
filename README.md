@@ -192,10 +192,6 @@ Para realizar um diagnóstico se está tudo configurado corretamente vamos usar 
          <img src="https://user-images.githubusercontent.com/22267601/170546329-4597b14a-0f65-419e-bd14-26e7c9118bda.png" width=100% height=40% >
       </p>
      
-4. Dar o Start na Seção 
-         <p align="center">
-         <img src="https://user-images.githubusercontent.com/22267601/165870335-f1c6166d-30b1-46f7-9a5e-556ba22a31c1.png" width=100% height=40% >
-      </p>
 
 ![appiuminspectormapeamento](https://user-images.githubusercontent.com/22267601/165870502-845e1730-8095-4725-a611-61801fe860b0.png)
 
