@@ -175,11 +175,11 @@ Para realizar um diagnóstico se está tudo configurado corretamente vamos usar 
 2. Montar o JSON
  ```
   {
-  "platformName": "Android",
-  "platformVersion": "9.0",
-  "app": "pasta apk",
+  "platformName": "iOS",
+  "platformVersion": "15.2",
   "deviceName": "nome do device",
-  "automationName": "uiautomator2"
+  "automationName": "XCUITest",
+  "udid":"encontra no simulador"
   }
 
   ```
@@ -189,7 +189,7 @@ Para realizar um diagnóstico se está tudo configurado corretamente vamos usar 
 
 3. Salvar o Json 
        <p align="center">
-         <img src="https://user-images.githubusercontent.com/22267601/165870225-ad6bc887-62be-4ad9-a5d6-ab03d0f5d816.png" width=100% height=40% >
+         <img src="https://user-images.githubusercontent.com/22267601/170546329-4597b14a-0f65-419e-bd14-26e7c9118bda.png" width=100% height=40% >
       </p>
      
 4. Dar o Start na Seção 
