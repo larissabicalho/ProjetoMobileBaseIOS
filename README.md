@@ -151,18 +151,45 @@ Para realizar um diagnóstico se está tudo configurado corretamente vamos usar 
    
 #### Executar os testes com Emulador ####
 
-1. Utilizando o prompt do Windows vá até a pasta onde se encontra o sdk é encontre o emulador é digite o seguinte comando conforme a imagem: </br>
+1. Abrir o Xcode e Escolher o Emulador</br>
     
     <p align="center">
-         <img src="https://user-images.githubusercontent.com/22267601/165868287-7f42153d-da27-4b89-bab5-bb75962d8e09.png" width=100% height=40% >
+         <img src="https://user-images.githubusercontent.com/22267601/170585252-0d670587-d31e-4778-9e09-68764bc81f35.png" width=100% height=40% >
       </p>
 
-2. Execute o Emulador escolhido da seguinte forma:
+2. Fazer o build:
     
      <p align="center">
-         <img src="https://user-images.githubusercontent.com/22267601/165868551-48689334-f6a0-458c-9caf-05c253041ac0.png" width=100% height=40% >
+         <img src="https://user-images.githubusercontent.com/22267601/170584941-ca2b100d-1c21-4048-8deb-fd3a5c05ec59.png" width=100% height=40% >
       </p>
+      
+ 3. Simulador:
+    
+     <p align="center">
+         <img src="https://user-images.githubusercontent.com/22267601/170585510-1ce8fc0a-421e-4e81-9678-fb704997aa92.png" width=100% height=40% >
+      </p>
+      
+ ## Gerar .ipa ##
+      
+1. Ir para Pasta onde Gerou .app</br>
+    
+    <p align="center">
+         <img src="https://user-images.githubusercontent.com/22267601/170585765-4b761811-fe7d-4b79-810d-56fdefbb9b16.png" width=100% height=40% >
+    </p>
 
+2. Pasta .app</br>
+    
+    <p align="center">
+         <img src="https://user-images.githubusercontent.com/22267601/170585944-751ce0f2-b203-446a-aed7-7698a13a9eee.png" width=100% height=40% >
+    </p>
+
+ 3. Ir até a pasta do app no terminal e digitar os seguintes comandos:
+   
+      mkdir Payload </br>
+      cp -R MyAppName.app Payload/ </br>
+      zip -r -s 64 Payload.zip Payload/ </br>
+      mv Payload.zip MyAppName.ipa </br>
+ 
 ![appiuminspector](https://user-images.githubusercontent.com/22267601/165868740-0609872f-8377-4f91-b51c-1857b9c471ea.png)
     
 #### Passos para utilizar o Appium Inspector ####
@@ -234,7 +261,7 @@ Para realizar um diagnóstico se está tudo configurado corretamente vamos usar 
        <p align="center">
          <img src="https://user-images.githubusercontent.com/22267601/170394717-5da21318-8c72-47fe-b3d9-bad24bbb1819.png" width=40% height=20% >
       </p>
-      ##ajustar
+     
    Configurações Emulador e Browserstack <br>     
      - É necessário para rodar no Browserstack colocar um ~ para não rodar os testes com a tag @naoRodarBrowserstack
        <p align="center">
