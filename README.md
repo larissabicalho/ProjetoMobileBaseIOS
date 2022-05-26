@@ -260,12 +260,14 @@ Para realizar um diagnóstico se está tudo configurado corretamente vamos usar 
 ps: a configuração para um Emulador é a mesma de um deviceReal 
       
 ![executarescritas2](https://user-images.githubusercontent.com/22267601/167221029-cdf03edc-3a68-4ae2-9ef0-7e12bc4df1ae.png) 
+  Para rodar no Browserstack foi necessário utilizar o ipa do seguinte repositório:
+  - Pois o Browserstack não aceita .ipa gerado para um simulador e para gerar p device real no XCode é Pago.
        <p align="center">
-         <img src="https://user-images.githubusercontent.com/22267601/167221514-eb76df9d-3c41-4b7b-a5ee-c21ba10d0ada.jpg" width=100% height=40% >
+         <img src="https://user-images.githubusercontent.com/22267601/170543190-373feb9f-2ca9-4b7a-b8dc-ea52bf1cf68f.png" width=100% height=40% >
       </p>
-- Upload APK
+- Upload IPA
        <p align="center">
-         <img src="https://user-images.githubusercontent.com/22267601/167221926-977a6c74-6c5b-493d-889c-1a36cbb29022.png" width=100% height=40% >
+         <img src="https://user-images.githubusercontent.com/22267601/170542120-cef88252-a026-4614-9af2-72e6efbf7d2d.png" width=100% height=40% >
       </p>
 - Abrirá essa nova janela (Para achar o AppAndroidUploadBrowserStack)
         <p align="center">
