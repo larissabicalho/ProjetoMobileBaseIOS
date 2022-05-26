@@ -292,7 +292,7 @@ ps: a configuração para um Emulador é a mesma de um deviceReal
        <p align="center">
          <img src="https://user-images.githubusercontent.com/22267601/170542120-cef88252-a026-4614-9af2-72e6efbf7d2d.png" width=100% height=40% >
       </p>
-- Abrirá essa nova janela (Para achar o AppAndroidUploadBrowserStack)
+- Abrirá essa nova janela (Para achar o AppIosUploadBrowserStack)
         <p align="center">
          <img src="https://user-images.githubusercontent.com/22267601/167222191-6d292767-3dda-4f0c-b8f1-04861b2d258c.jpg" width=80% height=40% >
       </p>
@@ -302,6 +302,6 @@ ps: a configuração para um Emulador é a mesma de um deviceReal
       </p>
 - Configuração no Intellij
          <p align="center">
-         <img src="https://user-images.githubusercontent.com/22267601/167222525-eb155f15-2659-4bcb-8031-2444fc7d01e0.png" width=100% height=40% >
+         <img src="https://user-images.githubusercontent.com/22267601/170587369-869936be-ba73-4eaf-89ed-d9e810c9d0f1.png" width=100% height=40% >
       </p>
 
