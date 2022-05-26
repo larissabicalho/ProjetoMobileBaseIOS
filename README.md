@@ -246,16 +246,16 @@ Para realizar um diagnóstico se está tudo configurado corretamente vamos usar 
       </p>
     - Resultado de um relatório 
         <p align="center">
-         <img src="https://user-images.githubusercontent.com/22267601/167218048-fda20b9c-6f73-4c87-96b5-4b119bf34ba3.jpg" width=100% height=40% >
+         <img src="https://user-images.githubusercontent.com/22267601/170518133-ef2af278-f464-4d70-9e16-e1ccea2b5e1d.png" width=100% height=40% >
       </p>
 ![executarescritas](https://user-images.githubusercontent.com/22267601/167218496-73bc6ee8-f546-448e-bb95-dd7c80179d13.png)
 ## Configuração no Intellij para rodar o Device ##
 - No global parameters e necessário ajustar as seguintes variáveis:
         <p align="center">
-         <img src="https://user-images.githubusercontent.com/22267601/167220624-320a68c2-b7be-4b1c-825c-4221adb239b8.png" width=50% height=40% >
+         <img src="https://user-images.githubusercontent.com/22267601/170522263-aa7750aa-894d-4651-bc58-efa5c3ed251b.png" width=50% height=40% >
       </p>
        <p align="center">
-         <img src="https://user-images.githubusercontent.com/22267601/167220789-8f128dd9-89d8-4621-947f-7b05feba2796.png" width=100% height=40% >
+         <img src="https://user-images.githubusercontent.com/22267601/170521439-4ef4e017-2d1b-4973-8a6d-6bd07f8c7722.png" width=100% height=40% >
       </p>
 ps: a configuração para um Emulador é a mesma de um deviceReal 
       
