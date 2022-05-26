@@ -225,21 +225,21 @@ Para realizar um diagnóstico se está tudo configurado corretamente vamos usar 
  -  Mais de 25 casos de teste <br>
    Features <br>
       <p align="center">
-         <img src="https://user-images.githubusercontent.com/22267601/167215306-ff13ac6c-3460-400e-a945-b6aa0f2fb9d8.jpg" width=50% height=40% >
+         <img src="https://user-images.githubusercontent.com/22267601/170393093-9d12a40e-83cb-4aab-8058-15240fe09a1e.png" width=50% height=40% >
       </p>
       
   
   Data Driven - Exemplo de Data Driven utilizando BDD     
       <p align="center">
-         <img src="https://user-images.githubusercontent.com/22267601/167215976-efcef390-2ab8-48fb-a9d9-8c323f5a19d1.jpg" width=50% height=40% >
+         <img src="https://user-images.githubusercontent.com/22267601/170393393-35a634db-b8fc-44af-a5e9-14acf76a7b78.png" width=50% height=40% >
       </p>
  
    Screen de uma tela
        <p align="center">
          <img src="https://user-images.githubusercontent.com/22267601/167216986-72843378-6e63-4ca9-9a87-3b32061b3682.png" width=40% height=20% >
       </p>
-      
-   Configurações para rodar Device Real, Emulador e Browserstack <br>     
+      ##ajustar
+   Configurações Emulador e Browserstack <br>     
      - É necessário para rodar no Browserstack retirar o teste de Input de Double Click
        <p align="center">
          <img src="https://user-images.githubusercontent.com/22267601/167217906-09ece542-7b2e-4517-929e-ef1dc74443e8.jpg" width=100% height=40% >
