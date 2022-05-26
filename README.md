@@ -240,9 +240,9 @@ Para realizar um diagnóstico se está tudo configurado corretamente vamos usar 
       </p>
       ##ajustar
    Configurações Emulador e Browserstack <br>     
-     - É necessário para rodar no Browserstack retirar o teste de Input de Double Click
+     - É necessário para rodar no Browserstack colocar um ~ para não rodar os testes com a tag @naoRodarBrowserstack
        <p align="center">
-         <img src="https://user-images.githubusercontent.com/22267601/167217906-09ece542-7b2e-4517-929e-ef1dc74443e8.jpg" width=100% height=40% >
+         <img src="https://user-images.githubusercontent.com/22267601/170544448-f06ca838-7e07-43f4-a316-c813ffdd8749.png" width=100% height=40% >
       </p>
     - Resultado de um relatório 
         <p align="center">
@@ -260,7 +260,7 @@ Para realizar um diagnóstico se está tudo configurado corretamente vamos usar 
 ps: a configuração para um Emulador é a mesma de um deviceReal 
       
 ![executarescritas2](https://user-images.githubusercontent.com/22267601/167221029-cdf03edc-3a68-4ae2-9ef0-7e12bc4df1ae.png) 
-  Para rodar no Browserstack foi necessário utilizar o ipa do seguinte repositório:
+  Para rodar no Browserstack foi necessário utilizar o ipa do seguinte repositório: https://github.com/aws-samples/aws-device-farm-sample-app-for-ios/tree/master/prebuilt
   - Pois o Browserstack não aceita .ipa gerado para um simulador e para gerar p device real no XCode é Pago.
        <p align="center">
          <img src="https://user-images.githubusercontent.com/22267601/170543190-373feb9f-2ca9-4b7a-b8dc-ea52bf1cf68f.png" width=100% height=40% >
