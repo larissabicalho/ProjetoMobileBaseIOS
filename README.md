@@ -144,7 +144,7 @@ Para realizar um diagnóstico se está tudo configurado corretamente vamos usar 
 <b> E caso a análise de dependência retorne algum erro, o item ficará com o símbolo em vermelho e uma sugestão para resolver o problema será apresentada. </b>
        
   <p align="center">
-        <img src="https://user-images.githubusercontent.com/22267601/165968299-bc10fb27-8b80-4cfb-b51d-092ffaca01d5.png" width=100% height=40% >
+        <img src="https://user-images.githubusercontent.com/22267601/170547656-574f77f8-6a17-46d0-a289-456aa0498c57.png" width=100% height=40% >
    </p>
 
       ### essa parte falar do xcode
