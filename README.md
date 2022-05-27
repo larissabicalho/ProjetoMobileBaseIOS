@@ -189,6 +189,18 @@ Para realizar um diagnóstico se está tudo configurado corretamente vamos usar 
       cp -R MyAppName.app Payload/ </br>
       zip -r -s 64 Payload.zip Payload/ </br>
       mv Payload.zip MyAppName.ipa </br>
+      
+ 4. Lista de Devices
+ 
+  <p align="center">
+         <img src="https://user-images.githubusercontent.com/22267601/170603028-01d86247-1911-4367-8048-4ead7304b17c.png" width=100% height=40% >
+    </p>
+
+ 4. Achar o udid
+ 
+  <p align="center">
+         <img src="https://user-images.githubusercontent.com/22267601/170603136-929df384-6ff4-480d-983c-a5582ca7948a.png" width=100% height=40% >
+    </p>
  
 ![appiuminspector](https://user-images.githubusercontent.com/22267601/165868740-0609872f-8377-4f91-b51c-1857b9c471ea.png)
     
